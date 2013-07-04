@@ -54,8 +54,7 @@ namespace Aplikacija
         private void miFileOdjava_Click(object sender, EventArgs e)
         {
             this.Close();
-            //frmPrijava prijava = new frmPrijava();
-            //prijava.Show();
+            Login.LoginForma.Show();
         }
 
         public async void AsyncObavijest()

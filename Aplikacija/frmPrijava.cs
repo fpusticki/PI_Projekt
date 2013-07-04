@@ -18,6 +18,18 @@ namespace Aplikacija
             InitializeComponent();
         }
 
+        public string txtIme
+        {
+            get { return txtKorisnickoIme.Text; }
+            set { txtKorisnickoIme.Text = value; }
+        }
+
+        public string txtPassword
+        {
+            get { return txtLozinka.Text; }
+            set { txtLozinka.Text = value; }
+        }
+
         private void btnOK_Click(object sender, EventArgs e)
         {
             bool login1 = false;
@@ -52,11 +64,11 @@ namespace Aplikacija
                                 if (txtKorisnickoIme.Text == dr["username"].ToString() && txtLozinka.Text == dr["lozinka"].ToString())
                                 {
                                     login1 = true;
-                                    //this.Hide();
                                     MessageBox.Show("Logiran kao admin: " + dr["ime"].ToString() + " " + dr["prezime"].ToString());
                                     Properties.Settings.Default.BrojPoslanihMailova = 0;
                                     frmAdministrator admin = new frmAdministrator();
                                     admin.Show();
+                                    Login.LoginForma.Hide();
                                 }
                             }
                             sc.Close();
@@ -71,10 +83,10 @@ namespace Aplikacija
                                 if (txtKorisnickoIme.Text == dr2["username"].ToString() && txtLozinka.Text == dr2["lozinka"].ToString())
                                 {
                                     login2 = true;
-                                    //this.Hide();
                                     MessageBox.Show("Logiran kao korisnik: " + dr2["ime"].ToString() + " " + dr2["prezime"].ToString());
                                     frmKorisnik korisnik = new frmKorisnik();
                                     korisnik.Show();
+                                    Login.LoginForma.Hide();
                                 }
                             }
                             sc2.Close();

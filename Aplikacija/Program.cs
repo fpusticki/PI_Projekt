@@ -17,7 +17,7 @@ namespace Aplikacija
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrijava());
+            Application.Run(Login.LoginForma);
         }
     }
 }

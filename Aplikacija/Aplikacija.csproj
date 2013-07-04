@@ -192,6 +192,7 @@
     <Compile Include="Korisnik\frmUrediKlijenta.Designer.cs">
       <DependentUpon>frmUrediKlijenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrator\frmCRM.resx">

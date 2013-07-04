@@ -19,9 +19,10 @@ namespace Aplikacija
 
         private void miFileOdjava_Click(object sender, EventArgs e)
         {
-            this.Close();    
-            //frmPrijava prijava = new frmPrijava();
-            //prijava.Show();
+            this.Close();
+            Login.LoginForma.txtIme = null;
+            Login.LoginForma.txtPassword = null;
+            Login.LoginForma.Show();
         }
 
         private void miUsluge_Click(object sender, EventArgs e)
