@@ -1,0 +1,160 @@
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\bin\Debug\Aplikacija.exe.config
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\bin\Debug\Aplikacija.exe
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\bin\Debug\Aplikacija.pdb
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Properties.Resources.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.exe
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.pdb
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.frmAdministrator.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.frmKorisnik.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmObavijesti.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmKlijenti.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmCjenik.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmRacun.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUsluge.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCRM.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCjenici.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmKorisnici.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmPostavke.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.frmPrijava.resources
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\bin\Debug\Baza.mdf
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\bin\Debug\Baza_log.ldf
+D:\Documents\Visual Studio 2012\Projects\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajUslugu.resources
+D:\Desktop\Aplikacija\Aplikacija\bin\Debug\Aplikacija.exe.config
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.exe
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.pdb
+D:\Desktop\Aplikacija\Aplikacija\bin\Debug\Baza.mdf
+D:\Desktop\Aplikacija\Aplikacija\bin\Debug\Baza_log.ldf
+D:\Desktop\Aplikacija\Aplikacija\bin\Debug\Aplikacija.exe
+D:\Desktop\Aplikacija\Aplikacija\bin\Debug\Aplikacija.pdb
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.csprojResolveAssemblyReference.cache
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCRM.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.frmAdministrator.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCjenici.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajUslugu.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmKorisnici.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmPostavke.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUsluge.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.frmPrijava.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmKlijenti.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmCjenik.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.frmKorisnik.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmObavijesti.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmRacun.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.Properties.Resources.resources
+D:\Desktop\Aplikacija\Aplikacija\obj\Debug\Aplikacija.csproj.GenerateResource.Cache
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Aplikacija.exe.config
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.exe
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.pdb
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Baza.mdf
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Baza_log.ldf
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Aplikacija.exe
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Aplikacija.pdb
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.csprojResolveAssemblyReference.cache
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCRM.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.frmAdministrator.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCjenici.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajUslugu.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmKorisnici.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmPostavke.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUsluge.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.frmPrijava.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmKlijenti.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmCjenik.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.frmKorisnik.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmObavijesti.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmRacun.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Properties.Resources.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.csproj.GenerateResource.Cache
+D:\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Aplikacija.exe.config
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.exe
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.pdb
+D:\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Baza.mdf
+D:\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Baza_log.ldf
+D:\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Aplikacija.exe
+D:\Desktop\Aplikacija - Franjo\Aplikacija\bin\Debug\Aplikacija.pdb
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.csprojResolveAssemblyReference.cache
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCRM.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.frmAdministrator.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCjenici.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajUslugu.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmKorisnici.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmPostavke.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUsluge.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.frmPrijava.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmKlijenti.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmCjenik.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.frmKorisnik.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmObavijesti.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmRacun.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Properties.Resources.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.csproj.GenerateResource.Cache
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajCjenik.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajStavkuCjenika.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\bin\Debug\Aplikacija.exe.config
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.exe
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.pdb
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\bin\Debug\Baza.mdf
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\bin\Debug\Baza_log.ldf
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\bin\Debug\Aplikacija.exe
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\bin\Debug\Aplikacija.pdb
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.csprojResolveAssemblyReference.cache
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCRM.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.frmAdministrator.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCjenici.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajCjenik.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajStavkuCjenika.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajUslugu.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Administrator.frmKorisnici.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Administrator.frmPostavke.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUsluge.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.frmPrijava.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmKlijenti.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmCjenik.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.frmKorisnik.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmObavijesti.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmRacun.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.Properties.Resources.resources
+D:\Desktop\Aplikacija - Franjo - Copy\Aplikacija\obj\Debug\Aplikacija.csproj.GenerateResource.Cache
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajKorisnika.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajAdmina.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUrediAdmina.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUrediKorisnika.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajAdmina.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajCjenik.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajKorisnika.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajStavkuCjenika.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUrediAdmina.resources
+C:\Users\Antonio\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUrediKorisnika.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmDodajKlijenta.resources
+D:\Desktop\Aplikacija - Franjo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmUrediKlijenta.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\bin\Debug\Aplikacija.exe.config
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.exe
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.pdb
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.csprojResolveAssemblyReference.cache
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCRM.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.frmAdministrator.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCjenici.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajAdmina.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajCjenik.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajKorisnika.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajStavkuCjenika.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajUslugu.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmKorisnici.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmPostavke.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUrediAdmina.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUrediKorisnika.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Administrator.frmUsluge.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.frmPrijava.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmDodajKlijenta.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmKlijenti.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmCjenik.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.frmKorisnik.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmObavijesti.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmRacun.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmUrediKlijenta.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.Properties.Resources.resources
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\obj\Debug\Aplikacija.csproj.GenerateResource.Cache
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\bin\Debug\Aplikacija.exe
+D:\Desktop\Aplikacija - Franjo Novo\Aplikacija\bin\Debug\Aplikacija.pdb

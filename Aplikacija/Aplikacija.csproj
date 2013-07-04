@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{931647E4-473E-4DB6-A4A8-620BD823451F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aplikacija</RootNamespace>
+    <AssemblyName>Aplikacija</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\frmCRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmCRM.Designer.cs">
+      <DependentUpon>frmCRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmAdministrator.Designer.cs">
+      <DependentUpon>frmAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmCjenici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmCjenici.Designer.cs">
+      <DependentUpon>frmCjenici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmDodajAdmina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmDodajAdmina.Designer.cs">
+      <DependentUpon>frmDodajAdmina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmDodajCjenik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmDodajCjenik.Designer.cs">
+      <DependentUpon>frmDodajCjenik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmDodajKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmDodajKorisnika.Designer.cs">
+      <DependentUpon>frmDodajKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmDodajStavkuCjenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmDodajStavkuCjenika.Designer.cs">
+      <DependentUpon>frmDodajStavkuCjenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmDodajUslugu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmDodajUslugu.Designer.cs">
+      <DependentUpon>frmDodajUslugu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmKorisnici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmKorisnici.Designer.cs">
+      <DependentUpon>frmKorisnici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmPostavke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmPostavke.Designer.cs">
+      <DependentUpon>frmPostavke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmUrediAdmina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmUrediAdmina.Designer.cs">
+      <DependentUpon>frmUrediAdmina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmUrediKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmUrediKorisnika.Designer.cs">
+      <DependentUpon>frmUrediKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\frmUsluge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmUsluge.Designer.cs">
+      <DependentUpon>frmUsluge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BazaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRM.cs" />
+    <Compile Include="frmPrijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrijava.Designer.cs">
+      <DependentUpon>frmPrijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klijenti.cs" />
+    <Compile Include="Korisnik\frmDodajKlijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnik\frmDodajKlijenta.Designer.cs">
+      <DependentUpon>frmDodajKlijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik\frmKlijenti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnik\frmKlijenti.Designer.cs">
+      <DependentUpon>frmKlijenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik\frmCjenik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnik\frmCjenik.Designer.cs">
+      <DependentUpon>frmCjenik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik\frmKorisnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnik\frmKorisnik.Designer.cs">
+      <DependentUpon>frmKorisnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik\frmObavijesti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnik\frmObavijesti.Designer.cs">
+      <DependentUpon>frmObavijesti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik\frmRacun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnik\frmRacun.Designer.cs">
+      <DependentUpon>frmRacun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik\frmUrediKlijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnik\frmUrediKlijenta.Designer.cs">
+      <DependentUpon>frmUrediKlijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrator\frmCRM.resx">
+      <DependentUpon>frmCRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmAdministrator.resx">
+      <DependentUpon>frmAdministrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmCjenici.resx">
+      <DependentUpon>frmCjenici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmDodajAdmina.resx">
+      <DependentUpon>frmDodajAdmina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmDodajCjenik.resx">
+      <DependentUpon>frmDodajCjenik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmDodajKorisnika.resx">
+      <DependentUpon>frmDodajKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmDodajStavkuCjenika.resx">
+      <DependentUpon>frmDodajStavkuCjenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmDodajUslugu.resx">
+      <DependentUpon>frmDodajUslugu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmKorisnici.resx">
+      <DependentUpon>frmKorisnici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmPostavke.resx">
+      <DependentUpon>frmPostavke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmUrediAdmina.resx">
+      <DependentUpon>frmUrediAdmina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmUrediKorisnika.resx">
+      <DependentUpon>frmUrediKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmUsluge.resx">
+      <DependentUpon>frmUsluge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrijava.resx">
+      <DependentUpon>frmPrijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnik\frmDodajKlijenta.resx">
+      <DependentUpon>frmDodajKlijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnik\frmKlijenti.resx">
+      <DependentUpon>frmKlijenti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnik\frmCjenik.resx">
+      <DependentUpon>frmCjenik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnik\frmKorisnik.resx">
+      <DependentUpon>frmKorisnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnik\frmObavijesti.resx">
+      <DependentUpon>frmObavijesti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnik\frmRacun.resx">
+      <DependentUpon>frmRacun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korisnik\frmUrediKlijenta.resx">
+      <DependentUpon>frmUrediKlijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BazaDataSet.xsc">
+      <DependentUpon>BazaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BazaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazaDataSet.xss">
+      <DependentUpon>BazaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

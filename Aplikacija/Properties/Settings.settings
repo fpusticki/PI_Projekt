@@ -1,0 +1,35 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Aplikacija.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Naziv" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Naziv poduzeća</Value>
+    </Setting>
+    <Setting Name="Adresa" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Adresa poduzeća</Value>
+    </Setting>
+    <Setting Name="OIB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">OIB vlasnika</Value>
+    </Setting>
+    <Setting Name="Broj_racuna" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Broj računa vlasnika</Value>
+    </Setting>
+    <Setting Name="Broj_telefona" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Broj telefona vlasnika</Value>
+    </Setting>
+    <Setting Name="PDV" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BrojPoslanihMailova" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BazaConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Baza\Baza.mdf;Integrated Security=True;Connect Timeout=30&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Baza\Baza.mdf;Integrated Security=True;Connect Timeout=30</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
