@@ -13,11 +13,6 @@ namespace Aplikacija.Administrator
 {
     public partial class frmUsluge : Form
     {
-        public int ID_usluge { get; set; }
-        public string naziv { get; set; }
-        public string opis { get; set; }
-        public float cijena { get; set; }
-
         public frmUsluge()
         {
             InitializeComponent();
@@ -40,14 +35,6 @@ namespace Aplikacija.Administrator
         private void btnNatrag_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void dgvUsluge_SelectionChanged(object sender, EventArgs e)
-        {
-            this.ID_usluge = int.Parse(dgvUsluge["iDuslugeDataGridViewTextBoxColumn", dgvUsluge.CurrentRow.Index].Value.ToString());
-            this.naziv = dgvUsluge["nazivDataGridViewTextBoxColumn", dgvUsluge.CurrentRow.Index].Value.ToString();
-            this.opis = dgvUsluge["opisDataGridViewTextBoxColumn", dgvUsluge.CurrentRow.Index].Value.ToString();
-            this.cijena = float.Parse(dgvUsluge["cijenaDataGridViewTextBoxColumn", dgvUsluge.CurrentRow.Index].Value.ToString());
         }
     }
 }

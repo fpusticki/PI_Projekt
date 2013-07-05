@@ -72,7 +72,6 @@
             this.dgvUsluge.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUsluge.Size = new System.Drawing.Size(759, 452);
             this.dgvUsluge.TabIndex = 0;
-            this.dgvUsluge.SelectionChanged += new System.EventHandler(this.dgvUsluge_SelectionChanged);
             // 
             // iDuslugeDataGridViewTextBoxColumn
             // 

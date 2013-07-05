@@ -80,7 +80,6 @@
             this.dgvKorisnici.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKorisnici.Size = new System.Drawing.Size(760, 200);
             this.dgvKorisnici.TabIndex = 0;
-            this.dgvKorisnici.SelectionChanged += new System.EventHandler(this.dgvKorisnici_SelectionChanged);
             // 
             // korisnikBindingSource
             // 
@@ -176,7 +175,6 @@
             this.dgvAdmin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAdmin.Size = new System.Drawing.Size(760, 200);
             this.dgvAdmin.TabIndex = 16;
-            this.dgvAdmin.SelectionChanged += new System.EventHandler(this.dgvAdmin_SelectionChanged);
             // 
             // btnDodajAdmin
             // 

@@ -38,23 +38,7 @@ namespace Aplikacija.Administrator
         }
 
         private void btnDodajStavke_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.Validate();
-                this.cjenikBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.bazaDataSet);
-
-                int ID_cjenika = (int)bazaDataSet.Cjenik.Rows[0]["ID_cjenika"];
-                frmDodajStavkuCjenika novaStavkaCjenika = new frmDodajStavkuCjenika(ID_cjenika);
-                novaStavkaCjenika.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            
+        {          
         }
 
         private void chbVazeci_CheckedChanged(object sender, EventArgs e)

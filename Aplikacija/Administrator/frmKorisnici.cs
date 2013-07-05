@@ -54,23 +54,5 @@ namespace Aplikacija.Administrator
             frmUrediKorisnika urediKorisnika = new frmUrediKorisnika();
             urediKorisnika.ShowDialog();
         }
-
-        private void dgvAdmin_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dgvAdmin.RowCount > 0)
-            {
-                int ID_admina = int.Parse(dgvAdmin.CurrentRow.Cells[0].Value.ToString());
-            }
-        }
-
-        private void dgvKorisnici_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dgvKorisnici.RowCount > 0)
-            {
-                int ID_korisnika = int.Parse(dgvKorisnici.CurrentRow.Cells[0].Value.ToString());
-            }
-        }
-
-
     }
 }

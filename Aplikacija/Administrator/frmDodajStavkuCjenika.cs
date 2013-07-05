@@ -12,12 +12,9 @@ namespace Aplikacija.Administrator
 {
     public partial class frmDodajStavkuCjenika : Form
     {
-        public int ID_cjenika { get; set; }
-
-        public frmDodajStavkuCjenika(int ID_cjenika)
+        public frmDodajStavkuCjenika()
         {
             InitializeComponent();
-            this.ID_cjenika = ID_cjenika;
         }
 
         private void frmDodajStavkuCjenika_Load_1(object sender, EventArgs e)
@@ -29,7 +26,7 @@ namespace Aplikacija.Administrator
             // TODO: This line of code loads data into the 'bazaDataSet.Cjenik' table. You can move, or remove it, as needed.
             //this.cjenikTableAdapter.Fill(this.bazaDataSet.Cjenik);
             // TODO: This line of code loads data into the 'bazaDataSet.Stavka_cjenika' table. You can move, or remove it, as needed.
-            this.stavka_cjenikaTableAdapter.FillByID_cjenika(this.bazaDataSet.Stavka_cjenika, ID_cjenika);
+            //this.stavka_cjenikaTableAdapter.FillByID_cjenika(this.bazaDataSet.Stavka_cjenika, ID_cjenika);
             stavka_cjenikaBindingSource.AddNew();
         }
 
@@ -37,11 +34,6 @@ namespace Aplikacija.Administrator
         {
             frmUsluge popisUsluga = new frmUsluge();
             popisUsluga.ShowDialog();
-
-            iD_uslugeTextBox.Text = popisUsluga.ID_usluge.ToString();
-            nazivTextBox.Text = popisUsluga.naziv.ToString();
-            cijenaTextBox.Text = popisUsluga.cijena.ToString();
-            opisTextBox.Text = popisUsluga.opis.ToString();
         }
 
         private void btnSpremi_Click(object sender, EventArgs e)
