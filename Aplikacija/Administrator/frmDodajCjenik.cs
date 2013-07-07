@@ -50,6 +50,26 @@ namespace Aplikacija.Administrator
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
+            if (this.chbVazeci.CheckState == CheckState.Checked)
+            {
+                Form frm = Application.OpenForms["frmCjenici"];
+                DataGridView grid;
+                foreach (Control co in frm.Controls)
+                {
+                    if (co is DataGridView && co.Name == "dgvCjenik")
+                    {
+                        grid = co as DataGridView;
+                        foreach (DataGridViewRow dgvr in grid.Rows)
+                        {
+                            if (Convert.ToInt32(dgvr.Cells[2].Value) != 0)
+                            {
+                                dgvr.Cells[2].Value = 0;
+                            }
+                        }
+                    }
+                }
+            }
+            this.chbVazeci.CheckState = CheckState.Checked;
             this.Validate();
             this.cjenikBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.bazaDataSet);
@@ -65,10 +85,6 @@ namespace Aplikacija.Administrator
             frmDodajStavkuCjenika novaStavkaCjenika = new frmDodajStavkuCjenika(ID_cjenika);
             if (Editing) novaStavkaCjenika.Editing = true;
             novaStavkaCjenika.ShowDialog();
-        }
-
-        private void chbVazeci_CheckedChanged(object sender, EventArgs e)
-        {
         }
     }
 }

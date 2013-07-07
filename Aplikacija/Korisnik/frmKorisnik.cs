@@ -54,6 +54,8 @@ namespace Aplikacija
         private void miFileOdjava_Click(object sender, EventArgs e)
         {
             this.Close();
+            Login.LoginForma.txtIme = null;
+            Login.LoginForma.txtPassword = null;
             Login.LoginForma.Show();
         }
 

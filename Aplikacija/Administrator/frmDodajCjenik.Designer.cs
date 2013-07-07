@@ -153,7 +153,6 @@
             // 
             // chbVazeci
             // 
-            this.chbVazeci.AutoCheck = false;
             this.chbVazeci.AutoSize = true;
             this.chbVazeci.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.cjenikBindingSource, "vazeci", true));
             this.chbVazeci.Location = new System.Drawing.Point(130, 130);
@@ -162,7 +161,6 @@
             this.chbVazeci.TabIndex = 33;
             this.chbVazeci.Text = "Da";
             this.chbVazeci.UseVisualStyleBackColor = true;
-            this.chbVazeci.CheckedChanged += new System.EventHandler(this.chbVazeci_CheckedChanged);
             // 
             // frmDodajCjenik
             // 
