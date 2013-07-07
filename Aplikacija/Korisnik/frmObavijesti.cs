@@ -34,7 +34,7 @@ namespace Aplikacija.Korisnik
         {
             SqlConnection sc = new SqlConnection();
 
-            sc.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Baza.mdf;Integrated Security=True";
+            sc.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Baza\Baza.mdf;Integrated Security=True";
 
             string selectUpit = "SELECT * FROM CRM";
 

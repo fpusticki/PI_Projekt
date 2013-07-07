@@ -126,7 +126,7 @@ namespace Aplikacija
                         using (Klijenti klijenti2 = new Klijenti())
                         {
                             //kao konstruktor pošiljatelja moraš staviti od kuda ide mail
-                            System.Net.Mail.MailAddress posiljatelj = new MailAddress("");
+                            System.Net.Mail.MailAddress posiljatelj = new MailAddress("modernizacija.crm@live.com");
 
                             string datum = klijentReader["zadnji_dolazak"].ToString();
 
@@ -167,7 +167,7 @@ namespace Aplikacija
                                 //Ovdje moraš za prvi parametar staviti svoj email s kojim se logiraš, a kao drugi parametar ti je password
                                 //To si rađe za ovaj projekt napravite neki zajednički mail da jedan drugome ne bi hakirali mailove
                                 //obavezno mora biti hotmail jer je sve napravljeno za hotmail
-                                klijent.Credentials = new System.Net.NetworkCredential("", "");
+                                klijent.Credentials = new System.Net.NetworkCredential("modernizacija.crm@live.com", "PIcrm2013!!");
                                 klijent.Send(message);
                                 klijent.SendCompleted += (sender2, e2) =>
                                 {
