@@ -113,6 +113,12 @@
     <Compile Include="Administrator\frmKorisnici.Designer.cs">
       <DependentUpon>frmKorisnici.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administrator\frmOdabirUsluga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\frmOdabirUsluga.Designer.cs">
+      <DependentUpon>frmOdabirUsluga.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrator\frmPostavke.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator\frmKorisnici.resx">
       <DependentUpon>frmKorisnici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\frmOdabirUsluga.resx">
+      <DependentUpon>frmOdabirUsluga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator\frmPostavke.resx">
       <DependentUpon>frmPostavke.cs</DependentUpon>

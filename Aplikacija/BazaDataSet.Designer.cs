@@ -1127,7 +1127,7 @@ namespace Aplikacija {
                 this.columnID_cjenika.ReadOnly = true;
                 this.columnID_cjenika.Unique = true;
                 this.columndatum.AllowDBNull = false;
-                this.columnvazeci.AllowDBNull = false;
+                this.columnvazeci.DefaultValue = ((bool)(false));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3893,11 +3893,28 @@ namespace Aplikacija {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool vazeci {
                 get {
-                    return ((bool)(this[this.tableCjenik.vazeciColumn]));
+                    try {
+                        return ((bool)(this[this.tableCjenik.vazeciColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'vazeci\' in table \'Cjenik\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableCjenik.vazeciColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsvazeciNull() {
+                return this.IsNull(this.tableCjenik.vazeciColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetvazeciNull() {
+                this[this.tableCjenik.vazeciColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5641,10 +5658,15 @@ SELECT ID_admin, ime, prezime, username, lozinka FROM Admin WHERE (ID_admin = @I
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID_cjenika, System.DateTime Original_datum, bool Original_vazeci) {
+        public virtual int Delete(int Original_ID_cjenika, System.DateTime Original_datum, global::System.Nullable<bool> Original_vazeci) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID_cjenika));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(Original_datum));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((bool)(Original_vazeci));
+            if ((Original_vazeci.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((bool)(Original_vazeci.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5665,9 +5687,14 @@ SELECT ID_admin, ime, prezime, username, lozinka FROM Admin WHERE (ID_admin = @I
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(System.DateTime datum, bool vazeci) {
+        public virtual int Insert(System.DateTime datum, global::System.Nullable<bool> vazeci) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(datum));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((bool)(vazeci));
+            if ((vazeci.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((bool)(vazeci.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5688,12 +5715,22 @@ SELECT ID_admin, ime, prezime, username, lozinka FROM Admin WHERE (ID_admin = @I
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime datum, bool vazeci, int Original_ID_cjenika, System.DateTime Original_datum, bool Original_vazeci, int ID_cjenika) {
+        public virtual int Update(System.DateTime datum, global::System.Nullable<bool> vazeci, int Original_ID_cjenika, System.DateTime Original_datum, global::System.Nullable<bool> Original_vazeci, int ID_cjenika) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(datum));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((bool)(vazeci));
+            if ((vazeci.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((bool)(vazeci.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_ID_cjenika));
             this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(Original_datum));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((bool)(Original_vazeci));
+            if ((Original_vazeci.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((bool)(Original_vazeci.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
             this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(ID_cjenika));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5715,7 +5752,7 @@ SELECT ID_admin, ime, prezime, username, lozinka FROM Admin WHERE (ID_admin = @I
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime datum, bool vazeci, int Original_ID_cjenika, System.DateTime Original_datum, bool Original_vazeci) {
+        public virtual int Update(System.DateTime datum, global::System.Nullable<bool> vazeci, int Original_ID_cjenika, System.DateTime Original_datum, global::System.Nullable<bool> Original_vazeci) {
             return this.Update(datum, vazeci, Original_ID_cjenika, Original_datum, Original_vazeci, Original_ID_cjenika);
         }
     }

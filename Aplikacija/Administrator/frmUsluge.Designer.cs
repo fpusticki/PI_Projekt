@@ -66,11 +66,11 @@
             this.iDmjernejediniceDataGridViewTextBoxColumn,
             this.cijenaDataGridViewTextBoxColumn});
             this.dgvUsluge.DataSource = this.uslugaBindingSource;
-            this.dgvUsluge.Location = new System.Drawing.Point(13, 42);
+            this.dgvUsluge.Location = new System.Drawing.Point(12, 41);
             this.dgvUsluge.Name = "dgvUsluge";
             this.dgvUsluge.ReadOnly = true;
             this.dgvUsluge.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsluge.Size = new System.Drawing.Size(759, 452);
+            this.dgvUsluge.Size = new System.Drawing.Size(760, 452);
             this.dgvUsluge.TabIndex = 0;
             // 
             // iDuslugeDataGridViewTextBoxColumn
@@ -169,7 +169,7 @@
             // 
             // btnNatrag
             // 
-            this.btnNatrag.Location = new System.Drawing.Point(13, 13);
+            this.btnNatrag.Location = new System.Drawing.Point(12, 12);
             this.btnNatrag.Name = "btnNatrag";
             this.btnNatrag.Size = new System.Drawing.Size(30, 23);
             this.btnNatrag.TabIndex = 4;

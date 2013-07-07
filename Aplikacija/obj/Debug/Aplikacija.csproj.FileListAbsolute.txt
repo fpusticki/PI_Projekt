@@ -187,3 +187,4 @@ D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmRacun
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmUrediKlijenta.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Properties.Resources.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.csproj.GenerateResource.Cache
+D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmOdabirUsluga.resources

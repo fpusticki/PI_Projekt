@@ -33,10 +33,10 @@
             System.Windows.Forms.Label iD_uslugeLabel;
             System.Windows.Forms.Label nazivLabel;
             System.Windows.Forms.Label opisLabel;
-            System.Windows.Forms.Label iD_mjerne_jediniceLabel;
             System.Windows.Forms.Label cijenaLabel;
-            this.btnPonisti = new System.Windows.Forms.Button();
+            System.Windows.Forms.Label iD_mjerne_jediniceLabel;
             this.btnSpremi = new System.Windows.Forms.Button();
+            this.btnDodaj = new System.Windows.Forms.Button();
             this.iD_cjenikaTextBox = new System.Windows.Forms.TextBox();
             this.cjenikBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bazaDataSet = new Aplikacija.BazaDataSet();
@@ -44,7 +44,6 @@
             this.uslugaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nazivTextBox = new System.Windows.Forms.TextBox();
             this.opisTextBox = new System.Windows.Forms.TextBox();
-            this.iD_mjerne_jediniceComboBox = new System.Windows.Forms.ComboBox();
             this.mjerna_jedinicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cijenaTextBox = new System.Windows.Forms.TextBox();
             this.btnOdabir = new System.Windows.Forms.Button();
@@ -55,6 +54,8 @@
             this.cjenikTableAdapter = new Aplikacija.BazaDataSetTableAdapters.CjenikTableAdapter();
             this.mjerna_jedinicaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.Mjerna_jedinicaTableAdapter();
             this.uslugaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.UslugaTableAdapter();
+            this.iD_mjerne_jediniceTextBox = new System.Windows.Forms.TextBox();
+            this.uslugaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.iDstavkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDcjenikaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,14 +67,15 @@
             iD_uslugeLabel = new System.Windows.Forms.Label();
             nazivLabel = new System.Windows.Forms.Label();
             opisLabel = new System.Windows.Forms.Label();
-            iD_mjerne_jediniceLabel = new System.Windows.Forms.Label();
             cijenaLabel = new System.Windows.Forms.Label();
+            iD_mjerne_jediniceLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cjenikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uslugaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mjerna_jedinicaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavka_cjenikaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uslugaBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // iD_cjenikaLabel
@@ -112,15 +114,6 @@
             opisLabel.TabIndex = 32;
             opisLabel.Text = "Opis:";
             // 
-            // iD_mjerne_jediniceLabel
-            // 
-            iD_mjerne_jediniceLabel.AutoSize = true;
-            iD_mjerne_jediniceLabel.Location = new System.Drawing.Point(409, 15);
-            iD_mjerne_jediniceLabel.Name = "iD_mjerne_jediniceLabel";
-            iD_mjerne_jediniceLabel.Size = new System.Drawing.Size(78, 13);
-            iD_mjerne_jediniceLabel.TabIndex = 33;
-            iD_mjerne_jediniceLabel.Text = "Mjerna jedinica";
-            // 
             // cijenaLabel
             // 
             cijenaLabel.AutoSize = true;
@@ -130,25 +123,25 @@
             cijenaLabel.TabIndex = 34;
             cijenaLabel.Text = "Cijena:";
             // 
-            // btnPonisti
-            // 
-            this.btnPonisti.Location = new System.Drawing.Point(387, 500);
-            this.btnPonisti.Name = "btnPonisti";
-            this.btnPonisti.Size = new System.Drawing.Size(75, 23);
-            this.btnPonisti.TabIndex = 29;
-            this.btnPonisti.Text = "Poništi";
-            this.btnPonisti.UseVisualStyleBackColor = true;
-            this.btnPonisti.Click += new System.EventHandler(this.btnPonisti_Click);
-            // 
             // btnSpremi
             // 
-            this.btnSpremi.Location = new System.Drawing.Point(306, 500);
+            this.btnSpremi.Location = new System.Drawing.Point(387, 500);
             this.btnSpremi.Name = "btnSpremi";
             this.btnSpremi.Size = new System.Drawing.Size(75, 23);
-            this.btnSpremi.TabIndex = 28;
+            this.btnSpremi.TabIndex = 29;
             this.btnSpremi.Text = "Spremi";
             this.btnSpremi.UseVisualStyleBackColor = true;
-            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
+            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click_1);
+            // 
+            // btnDodaj
+            // 
+            this.btnDodaj.Location = new System.Drawing.Point(306, 500);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(75, 23);
+            this.btnDodaj.TabIndex = 28;
+            this.btnDodaj.Text = "Dodaj";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // iD_cjenikaTextBox
             // 
@@ -197,19 +190,6 @@
             this.opisTextBox.Name = "opisTextBox";
             this.opisTextBox.Size = new System.Drawing.Size(263, 66);
             this.opisTextBox.TabIndex = 33;
-            // 
-            // iD_mjerne_jediniceComboBox
-            // 
-            this.iD_mjerne_jediniceComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mjerna_jedinicaBindingSource, "ID_mjerne_jedinice", true));
-            this.iD_mjerne_jediniceComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.uslugaBindingSource, "ID_mjerne_jedinice", true));
-            this.iD_mjerne_jediniceComboBox.DataSource = this.uslugaBindingSource;
-            this.iD_mjerne_jediniceComboBox.DisplayMember = "ID_mjerne_jedinice";
-            this.iD_mjerne_jediniceComboBox.FormattingEnabled = true;
-            this.iD_mjerne_jediniceComboBox.Location = new System.Drawing.Point(509, 12);
-            this.iD_mjerne_jediniceComboBox.Name = "iD_mjerne_jediniceComboBox";
-            this.iD_mjerne_jediniceComboBox.Size = new System.Drawing.Size(121, 21);
-            this.iD_mjerne_jediniceComboBox.TabIndex = 34;
-            this.iD_mjerne_jediniceComboBox.ValueMember = "ID_mjerne_jedinice";
             // 
             // mjerna_jedinicaBindingSource
             // 
@@ -291,6 +271,28 @@
             // 
             this.uslugaTableAdapter.ClearBeforeFill = true;
             // 
+            // iD_mjerne_jediniceLabel
+            // 
+            iD_mjerne_jediniceLabel.AutoSize = true;
+            iD_mjerne_jediniceLabel.Location = new System.Drawing.Point(409, 15);
+            iD_mjerne_jediniceLabel.Name = "iD_mjerne_jediniceLabel";
+            iD_mjerne_jediniceLabel.Size = new System.Drawing.Size(78, 13);
+            iD_mjerne_jediniceLabel.TabIndex = 37;
+            iD_mjerne_jediniceLabel.Text = "Mjerna jedinica";
+            // 
+            // iD_mjerne_jediniceTextBox
+            // 
+            this.iD_mjerne_jediniceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mjerna_jedinicaBindingSource, "Naziv", true));
+            this.iD_mjerne_jediniceTextBox.Location = new System.Drawing.Point(509, 12);
+            this.iD_mjerne_jediniceTextBox.Name = "iD_mjerne_jediniceTextBox";
+            this.iD_mjerne_jediniceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.iD_mjerne_jediniceTextBox.TabIndex = 38;
+            // 
+            // uslugaBindingSource1
+            // 
+            this.uslugaBindingSource1.DataMember = "FK_Usluga_Mjerna_jedinica";
+            this.uslugaBindingSource1.DataSource = this.mjerna_jedinicaBindingSource;
+            // 
             // iDstavkeDataGridViewTextBoxColumn
             // 
             this.iDstavkeDataGridViewTextBoxColumn.DataPropertyName = "ID_stavke";
@@ -322,9 +324,13 @@
             // 
             // Mjerna_jedinica
             // 
+            this.Mjerna_jedinica.DataSource = this.mjerna_jedinicaBindingSource;
+            this.Mjerna_jedinica.DisplayMember = "Naziv";
+            this.Mjerna_jedinica.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.Mjerna_jedinica.HeaderText = "Mjerna jedinica";
             this.Mjerna_jedinica.Name = "Mjerna_jedinica";
             this.Mjerna_jedinica.ReadOnly = true;
+            this.Mjerna_jedinica.ValueMember = "ID_mjerne_jedinice";
             // 
             // cijena
             // 
@@ -342,13 +348,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 562);
+            this.ClientSize = new System.Drawing.Size(800, 562);
+            this.Controls.Add(iD_mjerne_jediniceLabel);
+            this.Controls.Add(this.iD_mjerne_jediniceTextBox);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnOdabir);
             this.Controls.Add(cijenaLabel);
             this.Controls.Add(this.cijenaTextBox);
-            this.Controls.Add(iD_mjerne_jediniceLabel);
-            this.Controls.Add(this.iD_mjerne_jediniceComboBox);
             this.Controls.Add(opisLabel);
             this.Controls.Add(this.opisTextBox);
             this.Controls.Add(nazivLabel);
@@ -357,8 +363,8 @@
             this.Controls.Add(this.iD_uslugeTextBox);
             this.Controls.Add(iD_cjenikaLabel);
             this.Controls.Add(this.iD_cjenikaTextBox);
-            this.Controls.Add(this.btnPonisti);
             this.Controls.Add(this.btnSpremi);
+            this.Controls.Add(this.btnDodaj);
             this.Name = "frmDodajStavkuCjenika";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stavke cjenika";
@@ -369,6 +375,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.mjerna_jedinicaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavka_cjenikaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uslugaBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,13 +383,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnPonisti;
         private System.Windows.Forms.Button btnSpremi;
+        private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.TextBox iD_cjenikaTextBox;
         private System.Windows.Forms.TextBox iD_uslugeTextBox;
         private System.Windows.Forms.TextBox nazivTextBox;
         private System.Windows.Forms.TextBox opisTextBox;
-        private System.Windows.Forms.ComboBox iD_mjerne_jediniceComboBox;
         private System.Windows.Forms.TextBox cijenaTextBox;
         private System.Windows.Forms.Button btnOdabir;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -396,6 +402,8 @@
         private System.Windows.Forms.BindingSource uslugaBindingSource;
         private BazaDataSetTableAdapters.Mjerna_jedinicaTableAdapter mjerna_jedinicaTableAdapter;
         private System.Windows.Forms.BindingSource mjerna_jedinicaBindingSource;
+        private System.Windows.Forms.TextBox iD_mjerne_jediniceTextBox;
+        private System.Windows.Forms.BindingSource uslugaBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDstavkeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDcjenikaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDuslugeDataGridViewTextBoxColumn;
