@@ -30,11 +30,23 @@ namespace Aplikacija.Administrator
         {
             frmDodajUslugu novaUsluga = new frmDodajUslugu();
             novaUsluga.ShowDialog();
+            this.uslugaTableAdapter.Fill(this.bazaDataSet.Usluga);
         }
 
         private void btnNatrag_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnObrisi_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Želite li obrisati uslugu?", "Brisanje usluge", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            {
+                dgvUsluge.Rows.RemoveAt(dgvUsluge.CurrentRow.Index);
+            }
+            this.Validate();
+            this.uslugaBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bazaDataSet);
         }
     }
 }

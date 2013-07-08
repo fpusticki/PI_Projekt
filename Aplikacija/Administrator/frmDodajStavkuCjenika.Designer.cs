@@ -48,6 +48,13 @@
             this.cijenaTextBox = new System.Windows.Forms.TextBox();
             this.btnOdabir = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDstavkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDcjenikaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mjerna_jedinica = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stavka_cjenikaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stavka_cjenikaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.Stavka_cjenikaTableAdapter();
             this.tableAdapterManager = new Aplikacija.BazaDataSetTableAdapters.TableAdapterManager();
@@ -56,13 +63,6 @@
             this.uslugaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.UslugaTableAdapter();
             this.iD_mjerne_jediniceTextBox = new System.Windows.Forms.TextBox();
             this.uslugaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.iDstavkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDcjenikaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mjerna_jedinica = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.opis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             iD_cjenikaLabel = new System.Windows.Forms.Label();
             iD_uslugeLabel = new System.Windows.Forms.Label();
             nazivLabel = new System.Windows.Forms.Label();
@@ -122,6 +122,15 @@
             cijenaLabel.Size = new System.Drawing.Size(39, 13);
             cijenaLabel.TabIndex = 34;
             cijenaLabel.Text = "Cijena:";
+            // 
+            // iD_mjerne_jediniceLabel
+            // 
+            iD_mjerne_jediniceLabel.AutoSize = true;
+            iD_mjerne_jediniceLabel.Location = new System.Drawing.Point(409, 15);
+            iD_mjerne_jediniceLabel.Name = "iD_mjerne_jediniceLabel";
+            iD_mjerne_jediniceLabel.Size = new System.Drawing.Size(78, 13);
+            iD_mjerne_jediniceLabel.TabIndex = 37;
+            iD_mjerne_jediniceLabel.Text = "Mjerna jedinica";
             // 
             // btnSpremi
             // 
@@ -235,64 +244,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(768, 350);
             this.dataGridView1.TabIndex = 37;
             // 
-            // stavka_cjenikaBindingSource
-            // 
-            this.stavka_cjenikaBindingSource.DataMember = "Stavka_cjenika";
-            this.stavka_cjenikaBindingSource.DataSource = this.bazaDataSet;
-            // 
-            // stavka_cjenikaTableAdapter
-            // 
-            this.stavka_cjenikaTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.AdminTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CjenikTableAdapter = this.cjenikTableAdapter;
-            this.tableAdapterManager.CrmTableAdapter = null;
-            this.tableAdapterManager.KlijentTableAdapter = null;
-            this.tableAdapterManager.KorisnikTableAdapter = null;
-            this.tableAdapterManager.Mjerna_jedinicaTableAdapter = this.mjerna_jedinicaTableAdapter;
-            this.tableAdapterManager.RacunTableAdapter = null;
-            this.tableAdapterManager.Stavka_cjenikaTableAdapter = this.stavka_cjenikaTableAdapter;
-            this.tableAdapterManager.Stavka_racunaTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Aplikacija.BazaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UslugaTableAdapter = this.uslugaTableAdapter;
-            // 
-            // cjenikTableAdapter
-            // 
-            this.cjenikTableAdapter.ClearBeforeFill = true;
-            // 
-            // mjerna_jedinicaTableAdapter
-            // 
-            this.mjerna_jedinicaTableAdapter.ClearBeforeFill = true;
-            // 
-            // uslugaTableAdapter
-            // 
-            this.uslugaTableAdapter.ClearBeforeFill = true;
-            // 
-            // iD_mjerne_jediniceLabel
-            // 
-            iD_mjerne_jediniceLabel.AutoSize = true;
-            iD_mjerne_jediniceLabel.Location = new System.Drawing.Point(409, 15);
-            iD_mjerne_jediniceLabel.Name = "iD_mjerne_jediniceLabel";
-            iD_mjerne_jediniceLabel.Size = new System.Drawing.Size(78, 13);
-            iD_mjerne_jediniceLabel.TabIndex = 37;
-            iD_mjerne_jediniceLabel.Text = "Mjerna jedinica";
-            // 
-            // iD_mjerne_jediniceTextBox
-            // 
-            this.iD_mjerne_jediniceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mjerna_jedinicaBindingSource, "Naziv", true));
-            this.iD_mjerne_jediniceTextBox.Location = new System.Drawing.Point(509, 12);
-            this.iD_mjerne_jediniceTextBox.Name = "iD_mjerne_jediniceTextBox";
-            this.iD_mjerne_jediniceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.iD_mjerne_jediniceTextBox.TabIndex = 38;
-            // 
-            // uslugaBindingSource1
-            // 
-            this.uslugaBindingSource1.DataMember = "FK_Usluga_Mjerna_jedinica";
-            this.uslugaBindingSource1.DataSource = this.mjerna_jedinicaBindingSource;
-            // 
             // iDstavkeDataGridViewTextBoxColumn
             // 
             this.iDstavkeDataGridViewTextBoxColumn.DataPropertyName = "ID_stavke";
@@ -343,6 +294,55 @@
             this.opis.HeaderText = "Opis";
             this.opis.Name = "opis";
             this.opis.ReadOnly = true;
+            // 
+            // stavka_cjenikaBindingSource
+            // 
+            this.stavka_cjenikaBindingSource.DataMember = "Stavka_cjenika";
+            this.stavka_cjenikaBindingSource.DataSource = this.bazaDataSet;
+            // 
+            // stavka_cjenikaTableAdapter
+            // 
+            this.stavka_cjenikaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.AdminTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CjenikTableAdapter = this.cjenikTableAdapter;
+            this.tableAdapterManager.CrmTableAdapter = null;
+            this.tableAdapterManager.KlijentTableAdapter = null;
+            this.tableAdapterManager.KorisnikTableAdapter = null;
+            this.tableAdapterManager.Mjerna_jedinicaTableAdapter = this.mjerna_jedinicaTableAdapter;
+            this.tableAdapterManager.RacunTableAdapter = null;
+            this.tableAdapterManager.Stavka_cjenikaTableAdapter = this.stavka_cjenikaTableAdapter;
+            this.tableAdapterManager.Stavka_racunaTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Aplikacija.BazaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UslugaTableAdapter = this.uslugaTableAdapter;
+            // 
+            // cjenikTableAdapter
+            // 
+            this.cjenikTableAdapter.ClearBeforeFill = true;
+            // 
+            // mjerna_jedinicaTableAdapter
+            // 
+            this.mjerna_jedinicaTableAdapter.ClearBeforeFill = true;
+            // 
+            // uslugaTableAdapter
+            // 
+            this.uslugaTableAdapter.ClearBeforeFill = true;
+            // 
+            // iD_mjerne_jediniceTextBox
+            // 
+            this.iD_mjerne_jediniceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mjerna_jedinicaBindingSource, "Naziv", true));
+            this.iD_mjerne_jediniceTextBox.Location = new System.Drawing.Point(509, 12);
+            this.iD_mjerne_jediniceTextBox.Name = "iD_mjerne_jediniceTextBox";
+            this.iD_mjerne_jediniceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.iD_mjerne_jediniceTextBox.TabIndex = 38;
+            // 
+            // uslugaBindingSource1
+            // 
+            this.uslugaBindingSource1.DataMember = "FK_Usluga_Mjerna_jedinica";
+            this.uslugaBindingSource1.DataSource = this.mjerna_jedinicaBindingSource;
             // 
             // frmDodajStavkuCjenika
             // 

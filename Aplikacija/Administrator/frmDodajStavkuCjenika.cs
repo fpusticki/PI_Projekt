@@ -59,6 +59,8 @@ namespace Aplikacija.Administrator
             iD_mjerne_jediniceTextBox.Text = odabirUsluga.Mjerna_jedinica_usluge.ToString();
             opisTextBox.Text = odabirUsluga.Opis_usluge.ToString();
 
+            //dataGridView1["iDuslugeDataGridViewTextBoxColumn", dataGridView1]
+
         }
 
         private void btnSpremi_Click_1(object sender, EventArgs e)

@@ -29,10 +29,18 @@ namespace Aplikacija.Administrator
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.uslugaBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bazaDataSet);
-            this.Close();
+            try
+            {
+                this.Validate();
+                this.uslugaBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.bazaDataSet);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Iznimka: " + ex.Message);
+            }
         }
 
         private void btnPonisti_Click(object sender, EventArgs e)

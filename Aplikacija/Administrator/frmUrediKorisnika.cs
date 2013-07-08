@@ -12,15 +12,22 @@ namespace Aplikacija.Administrator
 {
     public partial class frmUrediKorisnika : Form
     {
-        public frmUrediKorisnika()
+        private frmKorisnici korisnici = null;
+
+        public frmUrediKorisnika(frmKorisnici f)
         {
             InitializeComponent();
+            korisnici = f;
         }
 
         private void frmUrediKorisnika_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'bazaDataSet.Korisnik' table. You can move, or remove it, as needed.
-            this.korisnikTableAdapter.Fill(this.bazaDataSet.Korisnik);
+            //this.korisnikTableAdapter.Fill(this.bazaDataSet.Korisnik);
+            imeTextBox.Text = korisnici.Ime_korisnika.ToString();
+            prezimeTextBox.Text = korisnici.Prezime_korisnika.ToString();
+            usernameTextBox.Text = korisnici.Username_korisnika.ToString();
+            lozinkaTextBox.Text = korisnici.Lozinka_korisnika.ToString();
         }
 
         private void btnPonisti_Click(object sender, EventArgs e)
@@ -30,10 +37,17 @@ namespace Aplikacija.Administrator
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.korisnikBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bazaDataSet);
-            this.Close();
+            try
+            {
+                this.Validate();
+                this.korisnikBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.bazaDataSet);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Iznimka: " + ex.Message);
+            }
         }
     }
 }

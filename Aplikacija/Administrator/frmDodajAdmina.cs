@@ -24,10 +24,17 @@ namespace Aplikacija.Administrator
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.adminBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bazaDataSet);
-            this.Close();
+            try
+            {
+                this.Validate();
+                this.adminBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.bazaDataSet);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Iznimka: " + ex.Message);
+            }
         }
 
         private void frmDodajAdmina_Load(object sender, EventArgs e)

@@ -31,6 +31,7 @@ namespace Aplikacija
             usluge.MdiParent = this;
             usluge.WindowState = FormWindowState.Maximized;
             usluge.Show();
+            
         }
 
         private void miCjenici_Click(object sender, EventArgs e)
