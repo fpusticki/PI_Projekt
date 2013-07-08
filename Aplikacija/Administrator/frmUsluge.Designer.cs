@@ -30,13 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvUsluge = new System.Windows.Forms.DataGridView();
-            this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.opisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDmjernejediniceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.mjernajedinicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bazaDataSet = new Aplikacija.BazaDataSet();
-            this.cijenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uslugaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uslugaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.UslugaTableAdapter();
             this.tableAdapterManager = new Aplikacija.BazaDataSetTableAdapters.TableAdapterManager();
@@ -45,6 +40,11 @@
             this.mjerna_jedinicaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.Mjerna_jedinicaTableAdapter();
             this.btnNatrag = new System.Windows.Forms.Button();
             this.btnObrisi = new System.Windows.Forms.Button();
+            this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDmjernejediniceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.cijenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsluge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mjernajedinicaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).BeginInit();
@@ -74,40 +74,6 @@
             this.dgvUsluge.Size = new System.Drawing.Size(760, 452);
             this.dgvUsluge.TabIndex = 0;
             // 
-            // iDuslugeDataGridViewTextBoxColumn
-            // 
-            this.iDuslugeDataGridViewTextBoxColumn.DataPropertyName = "ID_usluge";
-            this.iDuslugeDataGridViewTextBoxColumn.HeaderText = "ID usluge";
-            this.iDuslugeDataGridViewTextBoxColumn.Name = "iDuslugeDataGridViewTextBoxColumn";
-            this.iDuslugeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nazivDataGridViewTextBoxColumn
-            // 
-            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
-            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
-            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
-            this.nazivDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // opisDataGridViewTextBoxColumn
-            // 
-            this.opisDataGridViewTextBoxColumn.DataPropertyName = "opis";
-            this.opisDataGridViewTextBoxColumn.HeaderText = "Opis";
-            this.opisDataGridViewTextBoxColumn.Name = "opisDataGridViewTextBoxColumn";
-            this.opisDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // iDmjernejediniceDataGridViewTextBoxColumn
-            // 
-            this.iDmjernejediniceDataGridViewTextBoxColumn.DataPropertyName = "ID_mjerne_jedinice";
-            this.iDmjernejediniceDataGridViewTextBoxColumn.DataSource = this.mjernajedinicaBindingSource;
-            this.iDmjernejediniceDataGridViewTextBoxColumn.DisplayMember = "Naziv";
-            this.iDmjernejediniceDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.iDmjernejediniceDataGridViewTextBoxColumn.HeaderText = "Mjerna jedinica";
-            this.iDmjernejediniceDataGridViewTextBoxColumn.Name = "iDmjernejediniceDataGridViewTextBoxColumn";
-            this.iDmjernejediniceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDmjernejediniceDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.iDmjernejediniceDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.iDmjernejediniceDataGridViewTextBoxColumn.ValueMember = "ID_mjerne_jedinice";
-            // 
             // mjernajedinicaBindingSource
             // 
             this.mjernajedinicaBindingSource.DataMember = "Mjerna_jedinica";
@@ -117,13 +83,6 @@
             // 
             this.bazaDataSet.DataSetName = "BazaDataSet";
             this.bazaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cijenaDataGridViewTextBoxColumn
-            // 
-            this.cijenaDataGridViewTextBoxColumn.DataPropertyName = "cijena";
-            this.cijenaDataGridViewTextBoxColumn.HeaderText = "Cijena";
-            this.cijenaDataGridViewTextBoxColumn.Name = "cijenaDataGridViewTextBoxColumn";
-            this.cijenaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // uslugaBindingSource
             // 
@@ -188,6 +147,52 @@
             this.btnObrisi.UseVisualStyleBackColor = true;
             this.btnObrisi.Click += new System.EventHandler(this.btnObrisi_Click);
             // 
+            // iDuslugeDataGridViewTextBoxColumn
+            // 
+            this.iDuslugeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDuslugeDataGridViewTextBoxColumn.DataPropertyName = "ID_usluge";
+            this.iDuslugeDataGridViewTextBoxColumn.HeaderText = "ID usluge";
+            this.iDuslugeDataGridViewTextBoxColumn.Name = "iDuslugeDataGridViewTextBoxColumn";
+            this.iDuslugeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nazivDataGridViewTextBoxColumn
+            // 
+            this.nazivDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nazivDataGridViewTextBoxColumn.DataPropertyName = "naziv";
+            this.nazivDataGridViewTextBoxColumn.HeaderText = "Naziv";
+            this.nazivDataGridViewTextBoxColumn.Name = "nazivDataGridViewTextBoxColumn";
+            this.nazivDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // opisDataGridViewTextBoxColumn
+            // 
+            this.opisDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.opisDataGridViewTextBoxColumn.DataPropertyName = "opis";
+            this.opisDataGridViewTextBoxColumn.HeaderText = "Opis";
+            this.opisDataGridViewTextBoxColumn.Name = "opisDataGridViewTextBoxColumn";
+            this.opisDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iDmjernejediniceDataGridViewTextBoxColumn
+            // 
+            this.iDmjernejediniceDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDmjernejediniceDataGridViewTextBoxColumn.DataPropertyName = "ID_mjerne_jedinice";
+            this.iDmjernejediniceDataGridViewTextBoxColumn.DataSource = this.mjernajedinicaBindingSource;
+            this.iDmjernejediniceDataGridViewTextBoxColumn.DisplayMember = "Naziv";
+            this.iDmjernejediniceDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.iDmjernejediniceDataGridViewTextBoxColumn.HeaderText = "Mjerna jedinica";
+            this.iDmjernejediniceDataGridViewTextBoxColumn.Name = "iDmjernejediniceDataGridViewTextBoxColumn";
+            this.iDmjernejediniceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDmjernejediniceDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.iDmjernejediniceDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.iDmjernejediniceDataGridViewTextBoxColumn.ValueMember = "ID_mjerne_jedinice";
+            // 
+            // cijenaDataGridViewTextBoxColumn
+            // 
+            this.cijenaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cijenaDataGridViewTextBoxColumn.DataPropertyName = "cijena";
+            this.cijenaDataGridViewTextBoxColumn.HeaderText = "Cijena";
+            this.cijenaDataGridViewTextBoxColumn.Name = "cijenaDataGridViewTextBoxColumn";
+            this.cijenaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // frmUsluge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,12 +227,12 @@
         private System.Windows.Forms.BindingSource mjernajedinicaBindingSource;
         private System.Windows.Forms.BindingSource uslugaBindingSource1;
         private BazaDataSetTableAdapters.Mjerna_jedinicaTableAdapter mjerna_jedinicaTableAdapter;
+        private System.Windows.Forms.Button btnNatrag;
+        private System.Windows.Forms.Button btnObrisi;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDuslugeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nazivDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn opisDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn iDmjernejediniceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cijenaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnNatrag;
-        private System.Windows.Forms.Button btnObrisi;
     }
 }

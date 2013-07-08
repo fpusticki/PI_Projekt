@@ -83,23 +83,11 @@
     <Compile Include="Administrator\frmDodajAdmina.Designer.cs">
       <DependentUpon>frmDodajAdmina.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administrator\frmDodajCjenik.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrator\frmDodajCjenik.Designer.cs">
-      <DependentUpon>frmDodajCjenik.cs</DependentUpon>
-    </Compile>
     <Compile Include="Administrator\frmDodajKorisnika.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Administrator\frmDodajKorisnika.Designer.cs">
       <DependentUpon>frmDodajKorisnika.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Administrator\frmDodajStavkuCjenika.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrator\frmDodajStavkuCjenika.Designer.cs">
-      <DependentUpon>frmDodajStavkuCjenika.cs</DependentUpon>
     </Compile>
     <Compile Include="Administrator\frmDodajUslugu.cs">
       <SubType>Form</SubType>
@@ -112,12 +100,6 @@
     </Compile>
     <Compile Include="Administrator\frmKorisnici.Designer.cs">
       <DependentUpon>frmKorisnici.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Administrator\frmOdabirUsluga.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrator\frmOdabirUsluga.Designer.cs">
-      <DependentUpon>frmOdabirUsluga.cs</DependentUpon>
     </Compile>
     <Compile Include="Administrator\frmPostavke.cs">
       <SubType>Form</SubType>
@@ -156,46 +138,46 @@
       <DependentUpon>frmPrijava.cs</DependentUpon>
     </Compile>
     <Compile Include="Klijenti.cs" />
-    <Compile Include="Korisnik\frmDodajKlijenta.cs">
+    <Compile Include="Korisnik_folder\frmDodajKlijenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Korisnik\frmDodajKlijenta.Designer.cs">
+    <Compile Include="Korisnik_folder\frmDodajKlijenta.Designer.cs">
       <DependentUpon>frmDodajKlijenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\frmKlijenti.cs">
+    <Compile Include="Korisnik_folder\frmKlijenti.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Korisnik\frmKlijenti.Designer.cs">
+    <Compile Include="Korisnik_folder\frmKlijenti.Designer.cs">
       <DependentUpon>frmKlijenti.cs</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\frmCjenik.cs">
+    <Compile Include="Korisnik_folder\frmCjenik.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Korisnik\frmCjenik.Designer.cs">
+    <Compile Include="Korisnik_folder\frmCjenik.Designer.cs">
       <DependentUpon>frmCjenik.cs</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\frmKorisnik.cs">
+    <Compile Include="Korisnik_folder\frmKorisnik.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Korisnik\frmKorisnik.Designer.cs">
+    <Compile Include="Korisnik_folder\frmKorisnik.Designer.cs">
       <DependentUpon>frmKorisnik.cs</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\frmObavijesti.cs">
+    <Compile Include="Korisnik_folder\frmObavijesti.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Korisnik\frmObavijesti.Designer.cs">
+    <Compile Include="Korisnik_folder\frmObavijesti.Designer.cs">
       <DependentUpon>frmObavijesti.cs</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\frmRacun.cs">
+    <Compile Include="Korisnik_folder\frmRacun.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Korisnik\frmRacun.Designer.cs">
+    <Compile Include="Korisnik_folder\frmRacun.Designer.cs">
       <DependentUpon>frmRacun.cs</DependentUpon>
     </Compile>
-    <Compile Include="Korisnik\frmUrediKlijenta.cs">
+    <Compile Include="Korisnik_folder\frmUrediKlijenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Korisnik\frmUrediKlijenta.Designer.cs">
+    <Compile Include="Korisnik_folder\frmUrediKlijenta.Designer.cs">
       <DependentUpon>frmUrediKlijenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs" />
@@ -213,23 +195,14 @@
     <EmbeddedResource Include="Administrator\frmDodajAdmina.resx">
       <DependentUpon>frmDodajAdmina.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrator\frmDodajCjenik.resx">
-      <DependentUpon>frmDodajCjenik.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Administrator\frmDodajKorisnika.resx">
       <DependentUpon>frmDodajKorisnika.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Administrator\frmDodajStavkuCjenika.resx">
-      <DependentUpon>frmDodajStavkuCjenika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator\frmDodajUslugu.resx">
       <DependentUpon>frmDodajUslugu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator\frmKorisnici.resx">
       <DependentUpon>frmKorisnici.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Administrator\frmOdabirUsluga.resx">
-      <DependentUpon>frmOdabirUsluga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator\frmPostavke.resx">
       <DependentUpon>frmPostavke.cs</DependentUpon>
@@ -246,25 +219,25 @@
     <EmbeddedResource Include="frmPrijava.resx">
       <DependentUpon>frmPrijava.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korisnik\frmDodajKlijenta.resx">
+    <EmbeddedResource Include="Korisnik_folder\frmDodajKlijenta.resx">
       <DependentUpon>frmDodajKlijenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korisnik\frmKlijenti.resx">
+    <EmbeddedResource Include="Korisnik_folder\frmKlijenti.resx">
       <DependentUpon>frmKlijenti.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korisnik\frmCjenik.resx">
+    <EmbeddedResource Include="Korisnik_folder\frmCjenik.resx">
       <DependentUpon>frmCjenik.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korisnik\frmKorisnik.resx">
+    <EmbeddedResource Include="Korisnik_folder\frmKorisnik.resx">
       <DependentUpon>frmKorisnik.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korisnik\frmObavijesti.resx">
+    <EmbeddedResource Include="Korisnik_folder\frmObavijesti.resx">
       <DependentUpon>frmObavijesti.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korisnik\frmRacun.resx">
+    <EmbeddedResource Include="Korisnik_folder\frmRacun.resx">
       <DependentUpon>frmRacun.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Korisnik\frmUrediKlijenta.resx">
+    <EmbeddedResource Include="Korisnik_folder\frmUrediKlijenta.resx">
       <DependentUpon>frmUrediKlijenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

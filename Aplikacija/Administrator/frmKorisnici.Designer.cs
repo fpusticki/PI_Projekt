@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvKorisnici = new System.Windows.Forms.DataGridView();
-            this.iDkorisnikaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lozinkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.korisnikBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bazaDataSet = new Aplikacija.BazaDataSet();
             this.btnDodajKorisnik = new System.Windows.Forms.Button();
@@ -46,16 +41,21 @@
             this.lblAdmin = new System.Windows.Forms.Label();
             this.lblKorisnici = new System.Windows.Forms.Label();
             this.dgvAdmin = new System.Windows.Forms.DataGridView();
-            this.iDadminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prezimeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lozinkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDodajAdmin = new System.Windows.Forms.Button();
             this.btnUrediAdmin = new System.Windows.Forms.Button();
             this.btnUrediKorisnik = new System.Windows.Forms.Button();
             this.btnObrisiAdmin = new System.Windows.Forms.Button();
             this.btnObrisiKorisnik = new System.Windows.Forms.Button();
+            this.iDadminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezimeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lozinkaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDkorisnikaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lozinkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).BeginInit();
@@ -83,41 +83,6 @@
             this.dgvKorisnici.Size = new System.Drawing.Size(760, 200);
             this.dgvKorisnici.TabIndex = 0;
             this.dgvKorisnici.SelectionChanged += new System.EventHandler(this.dgvKorisnici_SelectionChanged);
-            // 
-            // iDkorisnikaDataGridViewTextBoxColumn
-            // 
-            this.iDkorisnikaDataGridViewTextBoxColumn.DataPropertyName = "ID_korisnika";
-            this.iDkorisnikaDataGridViewTextBoxColumn.HeaderText = "ID korisnika";
-            this.iDkorisnikaDataGridViewTextBoxColumn.Name = "iDkorisnikaDataGridViewTextBoxColumn";
-            this.iDkorisnikaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // imeDataGridViewTextBoxColumn
-            // 
-            this.imeDataGridViewTextBoxColumn.DataPropertyName = "ime";
-            this.imeDataGridViewTextBoxColumn.HeaderText = "Ime";
-            this.imeDataGridViewTextBoxColumn.Name = "imeDataGridViewTextBoxColumn";
-            this.imeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // prezimeDataGridViewTextBoxColumn
-            // 
-            this.prezimeDataGridViewTextBoxColumn.DataPropertyName = "prezime";
-            this.prezimeDataGridViewTextBoxColumn.HeaderText = "Prezime";
-            this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
-            this.prezimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "Korisničko ime";
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
-            this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lozinkaDataGridViewTextBoxColumn
-            // 
-            this.lozinkaDataGridViewTextBoxColumn.DataPropertyName = "lozinka";
-            this.lozinkaDataGridViewTextBoxColumn.HeaderText = "Lozinka";
-            this.lozinkaDataGridViewTextBoxColumn.Name = "lozinkaDataGridViewTextBoxColumn";
-            this.lozinkaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // korisnikBindingSource
             // 
@@ -216,41 +181,6 @@
             this.dgvAdmin.TabIndex = 16;
             this.dgvAdmin.SelectionChanged += new System.EventHandler(this.dgvAdmin_SelectionChanged);
             // 
-            // iDadminDataGridViewTextBoxColumn
-            // 
-            this.iDadminDataGridViewTextBoxColumn.DataPropertyName = "ID_admin";
-            this.iDadminDataGridViewTextBoxColumn.HeaderText = "ID administratora";
-            this.iDadminDataGridViewTextBoxColumn.Name = "iDadminDataGridViewTextBoxColumn";
-            this.iDadminDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // imeDataGridViewTextBoxColumn1
-            // 
-            this.imeDataGridViewTextBoxColumn1.DataPropertyName = "ime";
-            this.imeDataGridViewTextBoxColumn1.HeaderText = "Ime";
-            this.imeDataGridViewTextBoxColumn1.Name = "imeDataGridViewTextBoxColumn1";
-            this.imeDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // prezimeDataGridViewTextBoxColumn1
-            // 
-            this.prezimeDataGridViewTextBoxColumn1.DataPropertyName = "prezime";
-            this.prezimeDataGridViewTextBoxColumn1.HeaderText = "Prezime";
-            this.prezimeDataGridViewTextBoxColumn1.Name = "prezimeDataGridViewTextBoxColumn1";
-            this.prezimeDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // usernameDataGridViewTextBoxColumn1
-            // 
-            this.usernameDataGridViewTextBoxColumn1.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn1.HeaderText = "Korisnički ime";
-            this.usernameDataGridViewTextBoxColumn1.Name = "usernameDataGridViewTextBoxColumn1";
-            this.usernameDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // lozinkaDataGridViewTextBoxColumn1
-            // 
-            this.lozinkaDataGridViewTextBoxColumn1.DataPropertyName = "lozinka";
-            this.lozinkaDataGridViewTextBoxColumn1.HeaderText = "Lozinka";
-            this.lozinkaDataGridViewTextBoxColumn1.Name = "lozinkaDataGridViewTextBoxColumn1";
-            this.lozinkaDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
             // btnDodajAdmin
             // 
             this.btnDodajAdmin.Location = new System.Drawing.Point(302, 260);
@@ -301,6 +231,86 @@
             this.btnObrisiKorisnik.UseVisualStyleBackColor = true;
             this.btnObrisiKorisnik.Click += new System.EventHandler(this.btnObrisiKorisnik_Click);
             // 
+            // iDadminDataGridViewTextBoxColumn
+            // 
+            this.iDadminDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDadminDataGridViewTextBoxColumn.DataPropertyName = "ID_admin";
+            this.iDadminDataGridViewTextBoxColumn.HeaderText = "ID administratora";
+            this.iDadminDataGridViewTextBoxColumn.Name = "iDadminDataGridViewTextBoxColumn";
+            this.iDadminDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // imeDataGridViewTextBoxColumn1
+            // 
+            this.imeDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.imeDataGridViewTextBoxColumn1.DataPropertyName = "ime";
+            this.imeDataGridViewTextBoxColumn1.HeaderText = "Ime";
+            this.imeDataGridViewTextBoxColumn1.Name = "imeDataGridViewTextBoxColumn1";
+            this.imeDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // prezimeDataGridViewTextBoxColumn1
+            // 
+            this.prezimeDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.prezimeDataGridViewTextBoxColumn1.DataPropertyName = "prezime";
+            this.prezimeDataGridViewTextBoxColumn1.HeaderText = "Prezime";
+            this.prezimeDataGridViewTextBoxColumn1.Name = "prezimeDataGridViewTextBoxColumn1";
+            this.prezimeDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // usernameDataGridViewTextBoxColumn1
+            // 
+            this.usernameDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.usernameDataGridViewTextBoxColumn1.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn1.HeaderText = "Korisnički ime";
+            this.usernameDataGridViewTextBoxColumn1.Name = "usernameDataGridViewTextBoxColumn1";
+            this.usernameDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // lozinkaDataGridViewTextBoxColumn1
+            // 
+            this.lozinkaDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.lozinkaDataGridViewTextBoxColumn1.DataPropertyName = "lozinka";
+            this.lozinkaDataGridViewTextBoxColumn1.HeaderText = "Lozinka";
+            this.lozinkaDataGridViewTextBoxColumn1.Name = "lozinkaDataGridViewTextBoxColumn1";
+            this.lozinkaDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // iDkorisnikaDataGridViewTextBoxColumn
+            // 
+            this.iDkorisnikaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDkorisnikaDataGridViewTextBoxColumn.DataPropertyName = "ID_korisnika";
+            this.iDkorisnikaDataGridViewTextBoxColumn.HeaderText = "ID korisnika";
+            this.iDkorisnikaDataGridViewTextBoxColumn.Name = "iDkorisnikaDataGridViewTextBoxColumn";
+            this.iDkorisnikaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // imeDataGridViewTextBoxColumn
+            // 
+            this.imeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.imeDataGridViewTextBoxColumn.DataPropertyName = "ime";
+            this.imeDataGridViewTextBoxColumn.HeaderText = "Ime";
+            this.imeDataGridViewTextBoxColumn.Name = "imeDataGridViewTextBoxColumn";
+            this.imeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prezimeDataGridViewTextBoxColumn
+            // 
+            this.prezimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.prezimeDataGridViewTextBoxColumn.DataPropertyName = "prezime";
+            this.prezimeDataGridViewTextBoxColumn.HeaderText = "Prezime";
+            this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
+            this.prezimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // usernameDataGridViewTextBoxColumn
+            // 
+            this.usernameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "Korisničko ime";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lozinkaDataGridViewTextBoxColumn
+            // 
+            this.lozinkaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.lozinkaDataGridViewTextBoxColumn.DataPropertyName = "lozinka";
+            this.lozinkaDataGridViewTextBoxColumn.HeaderText = "Lozinka";
+            this.lozinkaDataGridViewTextBoxColumn.Name = "lozinkaDataGridViewTextBoxColumn";
+            this.lozinkaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // frmKorisnici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,17 +359,17 @@
         private System.Windows.Forms.Button btnDodajAdmin;
         private System.Windows.Forms.Button btnUrediAdmin;
         private System.Windows.Forms.Button btnUrediKorisnik;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDadminDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn imeDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prezimeDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lozinkaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button btnObrisiAdmin;
+        private System.Windows.Forms.Button btnObrisiKorisnik;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDkorisnikaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn imeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prezimeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lozinkaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnObrisiAdmin;
-        private System.Windows.Forms.Button btnObrisiKorisnik;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDadminDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prezimeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lozinkaDataGridViewTextBoxColumn1;
     }
 }
