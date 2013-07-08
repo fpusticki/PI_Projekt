@@ -12,16 +12,25 @@ namespace Aplikacija.Korisnik
 {
     public partial class frmUrediKlijenta : Form
     {
-        public frmUrediKlijenta()
+        private frmKlijenti klijenti = null;
+
+        public frmUrediKlijenta(frmKlijenti f)
         {
             InitializeComponent();
+            klijenti = f;
         }
 
         private void frmUrediKlijenta_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'bazaDataSet.Klijent' table. You can move, or remove it, as needed.
-            this.klijentTableAdapter.Fill(this.bazaDataSet.Klijent);
+            //this.klijentTableAdapter.Fill(this.bazaDataSet.Klijent);
 
+            imeTextBox.Text = klijenti.Ime.ToString();
+            prezimeTextBox.Text = klijenti.Prezime.ToString();
+            spolTextBox.Text = klijenti.Spol.ToString();
+            emailTextBox.Text = klijenti.Email.ToString();
+            telefonTextBox.Text = klijenti.Telefon.ToString();
+            newsletterCheckBox.Checked = Convert.ToBoolean(klijenti.Newsletter);
         }
 
         private void btnPonisti_Click(object sender, EventArgs e)
@@ -31,10 +40,17 @@ namespace Aplikacija.Korisnik
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.klijentBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bazaDataSet);
-            this.Close();
+            try
+            {
+                this.Validate();
+                this.klijentBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.bazaDataSet);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Iznimka: " + ex.Message);
+            }
         }
     }
 }

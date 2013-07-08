@@ -30,15 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvKlijenti = new System.Windows.Forms.DataGridView();
-            this.klijentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bazaDataSet = new Aplikacija.BazaDataSet();
-            this.btnDodaj = new System.Windows.Forms.Button();
-            this.klijentTableAdapter = new Aplikacija.BazaDataSetTableAdapters.KlijentTableAdapter();
-            this.tableAdapterManager = new Aplikacija.BazaDataSetTableAdapters.TableAdapterManager();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnNatrag = new System.Windows.Forms.Button();
-            this.btnObriši = new System.Windows.Forms.Button();
-            this.btnUredi = new System.Windows.Forms.Button();
             this.iDklijentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +39,15 @@
             this.newsletterDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.brojdolazakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zadnjidolazakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.klijentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bazaDataSet = new Aplikacija.BazaDataSet();
+            this.btnDodaj = new System.Windows.Forms.Button();
+            this.klijentTableAdapter = new Aplikacija.BazaDataSetTableAdapters.KlijentTableAdapter();
+            this.tableAdapterManager = new Aplikacija.BazaDataSetTableAdapters.TableAdapterManager();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnNatrag = new System.Windows.Forms.Button();
+            this.btnObriši = new System.Windows.Forms.Button();
+            this.btnUredi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKlijenti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klijentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).BeginInit();
@@ -78,6 +78,73 @@
             this.dgvKlijenti.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKlijenti.Size = new System.Drawing.Size(759, 453);
             this.dgvKlijenti.TabIndex = 0;
+            this.dgvKlijenti.SelectionChanged += new System.EventHandler(this.dgvKlijenti_SelectionChanged);
+            // 
+            // iDklijentaDataGridViewTextBoxColumn
+            // 
+            this.iDklijentaDataGridViewTextBoxColumn.DataPropertyName = "ID_klijenta";
+            this.iDklijentaDataGridViewTextBoxColumn.HeaderText = "ID_klijenta";
+            this.iDklijentaDataGridViewTextBoxColumn.Name = "iDklijentaDataGridViewTextBoxColumn";
+            this.iDklijentaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDklijentaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // imeDataGridViewTextBoxColumn
+            // 
+            this.imeDataGridViewTextBoxColumn.DataPropertyName = "ime";
+            this.imeDataGridViewTextBoxColumn.HeaderText = "Ime";
+            this.imeDataGridViewTextBoxColumn.Name = "imeDataGridViewTextBoxColumn";
+            this.imeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prezimeDataGridViewTextBoxColumn
+            // 
+            this.prezimeDataGridViewTextBoxColumn.DataPropertyName = "prezime";
+            this.prezimeDataGridViewTextBoxColumn.HeaderText = "Prezime";
+            this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
+            this.prezimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // spolDataGridViewTextBoxColumn
+            // 
+            this.spolDataGridViewTextBoxColumn.DataPropertyName = "spol";
+            this.spolDataGridViewTextBoxColumn.HeaderText = "Spol";
+            this.spolDataGridViewTextBoxColumn.Name = "spolDataGridViewTextBoxColumn";
+            this.spolDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "e-mail";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefonDataGridViewTextBoxColumn
+            // 
+            this.telefonDataGridViewTextBoxColumn.DataPropertyName = "telefon";
+            this.telefonDataGridViewTextBoxColumn.HeaderText = "Telefon";
+            this.telefonDataGridViewTextBoxColumn.Name = "telefonDataGridViewTextBoxColumn";
+            this.telefonDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // newsletterDataGridViewCheckBoxColumn
+            // 
+            this.newsletterDataGridViewCheckBoxColumn.DataPropertyName = "newsletter";
+            this.newsletterDataGridViewCheckBoxColumn.HeaderText = "Newsletter";
+            this.newsletterDataGridViewCheckBoxColumn.Name = "newsletterDataGridViewCheckBoxColumn";
+            this.newsletterDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // brojdolazakaDataGridViewTextBoxColumn
+            // 
+            this.brojdolazakaDataGridViewTextBoxColumn.DataPropertyName = "broj_dolazaka";
+            this.brojdolazakaDataGridViewTextBoxColumn.HeaderText = "broj_dolazaka";
+            this.brojdolazakaDataGridViewTextBoxColumn.Name = "brojdolazakaDataGridViewTextBoxColumn";
+            this.brojdolazakaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.brojdolazakaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // zadnjidolazakDataGridViewTextBoxColumn
+            // 
+            this.zadnjidolazakDataGridViewTextBoxColumn.DataPropertyName = "zadnji_dolazak";
+            this.zadnjidolazakDataGridViewTextBoxColumn.HeaderText = "zadnji_dolazak";
+            this.zadnjidolazakDataGridViewTextBoxColumn.Name = "zadnjidolazakDataGridViewTextBoxColumn";
+            this.zadnjidolazakDataGridViewTextBoxColumn.ReadOnly = true;
+            this.zadnjidolazakDataGridViewTextBoxColumn.Visible = false;
             // 
             // klijentBindingSource
             // 
@@ -159,72 +226,6 @@
             this.btnUredi.Text = "Uredi";
             this.btnUredi.UseVisualStyleBackColor = true;
             this.btnUredi.Click += new System.EventHandler(this.btnUredi_Click);
-            // 
-            // iDklijentaDataGridViewTextBoxColumn
-            // 
-            this.iDklijentaDataGridViewTextBoxColumn.DataPropertyName = "ID_klijenta";
-            this.iDklijentaDataGridViewTextBoxColumn.HeaderText = "ID_klijenta";
-            this.iDklijentaDataGridViewTextBoxColumn.Name = "iDklijentaDataGridViewTextBoxColumn";
-            this.iDklijentaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDklijentaDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // imeDataGridViewTextBoxColumn
-            // 
-            this.imeDataGridViewTextBoxColumn.DataPropertyName = "ime";
-            this.imeDataGridViewTextBoxColumn.HeaderText = "Ime";
-            this.imeDataGridViewTextBoxColumn.Name = "imeDataGridViewTextBoxColumn";
-            this.imeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // prezimeDataGridViewTextBoxColumn
-            // 
-            this.prezimeDataGridViewTextBoxColumn.DataPropertyName = "prezime";
-            this.prezimeDataGridViewTextBoxColumn.HeaderText = "Prezime";
-            this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
-            this.prezimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // spolDataGridViewTextBoxColumn
-            // 
-            this.spolDataGridViewTextBoxColumn.DataPropertyName = "spol";
-            this.spolDataGridViewTextBoxColumn.HeaderText = "Spol";
-            this.spolDataGridViewTextBoxColumn.Name = "spolDataGridViewTextBoxColumn";
-            this.spolDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "e-mail";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // telefonDataGridViewTextBoxColumn
-            // 
-            this.telefonDataGridViewTextBoxColumn.DataPropertyName = "telefon";
-            this.telefonDataGridViewTextBoxColumn.HeaderText = "Telefon";
-            this.telefonDataGridViewTextBoxColumn.Name = "telefonDataGridViewTextBoxColumn";
-            this.telefonDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // newsletterDataGridViewCheckBoxColumn
-            // 
-            this.newsletterDataGridViewCheckBoxColumn.DataPropertyName = "newsletter";
-            this.newsletterDataGridViewCheckBoxColumn.HeaderText = "Newsletter";
-            this.newsletterDataGridViewCheckBoxColumn.Name = "newsletterDataGridViewCheckBoxColumn";
-            this.newsletterDataGridViewCheckBoxColumn.ReadOnly = true;
-            // 
-            // brojdolazakaDataGridViewTextBoxColumn
-            // 
-            this.brojdolazakaDataGridViewTextBoxColumn.DataPropertyName = "broj_dolazaka";
-            this.brojdolazakaDataGridViewTextBoxColumn.HeaderText = "broj_dolazaka";
-            this.brojdolazakaDataGridViewTextBoxColumn.Name = "brojdolazakaDataGridViewTextBoxColumn";
-            this.brojdolazakaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.brojdolazakaDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // zadnjidolazakDataGridViewTextBoxColumn
-            // 
-            this.zadnjidolazakDataGridViewTextBoxColumn.DataPropertyName = "zadnji_dolazak";
-            this.zadnjidolazakDataGridViewTextBoxColumn.HeaderText = "zadnji_dolazak";
-            this.zadnjidolazakDataGridViewTextBoxColumn.Name = "zadnjidolazakDataGridViewTextBoxColumn";
-            this.zadnjidolazakDataGridViewTextBoxColumn.ReadOnly = true;
-            this.zadnjidolazakDataGridViewTextBoxColumn.Visible = false;
             // 
             // frmKlijenti
             // 

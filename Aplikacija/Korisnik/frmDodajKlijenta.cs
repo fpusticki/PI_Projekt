@@ -24,10 +24,17 @@ namespace Aplikacija.Korisnik
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.klijentBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bazaDataSet);
-            this.Close();
+            try
+            {
+                this.Validate();
+                this.klijentBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.bazaDataSet);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Iznimka: " + ex.Message);
+            }
         }
 
         private void frmDodajKlijenta_Load(object sender, EventArgs e)
@@ -35,7 +42,6 @@ namespace Aplikacija.Korisnik
             // TODO: This line of code loads data into the 'bazaDataSet.Klijent' table. You can move, or remove it, as needed.
             this.klijentTableAdapter.Fill(this.bazaDataSet.Klijent);
             klijentBindingSource.AddNew();
-
         }
     }
 }

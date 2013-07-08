@@ -13,6 +13,13 @@ namespace Aplikacija.Korisnik
 {
     public partial class frmKlijenti : Form
     {
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
+        public string Spol { get; set; }
+        public string Email { get; set; }
+        public string Telefon { get; set; }
+        public bool Newsletter { get; set; }
+
         public frmKlijenti()
         {
             InitializeComponent();
@@ -68,12 +75,14 @@ namespace Aplikacija.Korisnik
         {
             frmDodajKlijenta noviKlijent = new frmDodajKlijenta();
             noviKlijent.ShowDialog();
+            this.klijentTableAdapter.Fill(this.bazaDataSet.Klijent);
         }
 
         private void btnUredi_Click(object sender, EventArgs e)
         {
-            frmUrediKlijenta urediKlijenta = new frmUrediKlijenta();
+            frmUrediKlijenta urediKlijenta = new frmUrediKlijenta(this);
             urediKlijenta.ShowDialog();
+            //this.klijentTableAdapter.Fill(this.bazaDataSet.Klijent);
         }
 
         private void btnObriši_Click(object sender, EventArgs e)
@@ -82,11 +91,27 @@ namespace Aplikacija.Korisnik
             {
                 dgvKlijenti.Rows.RemoveAt(dgvKlijenti.CurrentRow.Index);
             }
+            this.Validate();
+            this.klijentBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bazaDataSet);
         }
 
         private void btnNatrag_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgvKlijenti_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvKlijenti.SelectedRows.Count > 0)
+            {
+                this.Ime = dgvKlijenti["imeDataGridViewTextBoxColumn", dgvKlijenti.CurrentRow.Index].Value.ToString();
+                this.Prezime = dgvKlijenti["prezimeDataGridViewTextBoxColumn", dgvKlijenti.CurrentRow.Index].Value.ToString();
+                this.Spol = dgvKlijenti["spolDataGridViewTextBoxColumn", dgvKlijenti.CurrentRow.Index].Value.ToString();
+                this.Email = dgvKlijenti["emailDataGridViewTextBoxColumn", dgvKlijenti.CurrentRow.Index].Value.ToString();
+                this.Telefon = dgvKlijenti["telefonDataGridViewTextBoxColumn", dgvKlijenti.CurrentRow.Index].Value.ToString();
+                this.Newsletter = Convert.ToBoolean(dgvKlijenti["newsletterDataGridViewCheckBoxColumn", dgvKlijenti.CurrentRow.Index].Value);
+            }
         }
     }
 }

@@ -51,7 +51,7 @@ namespace Aplikacija.Administrator
         {
             frmUrediAdmina urediAdmina = new frmUrediAdmina(this);
             urediAdmina.ShowDialog();
-            this.adminTableAdapter.Fill(this.bazaDataSet.Admin);
+            //this.adminTableAdapter.Fill(this.bazaDataSet.Admin);
         }
 
         private void btnDodajKorisnik_Click(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace Aplikacija.Administrator
         {
             frmUrediKorisnika urediKorisnika = new frmUrediKorisnika(this);
             urediKorisnika.ShowDialog();
-            this.korisnikTableAdapter.Fill(this.bazaDataSet.Korisnik);
+            //this.korisnikTableAdapter.Fill(this.bazaDataSet.Korisnik);
         }
 
         private void btnObrisiAdmin_Click(object sender, EventArgs e)
