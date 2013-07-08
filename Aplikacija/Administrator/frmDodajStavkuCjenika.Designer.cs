@@ -48,9 +48,6 @@
             this.cijenaTextBox = new System.Windows.Forms.TextBox();
             this.btnOdabir = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDstavkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDcjenikaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mjerna_jedinica = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -227,45 +224,17 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDstavkeDataGridViewTextBoxColumn,
-            this.iDcjenikaDataGridViewTextBoxColumn,
-            this.iDuslugeDataGridViewTextBoxColumn,
             this.Naziv,
             this.Mjerna_jedinica,
             this.cijena,
             this.opis});
-            this.dataGridView1.DataSource = this.stavka_cjenikaBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 144);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(768, 350);
             this.dataGridView1.TabIndex = 37;
-            // 
-            // iDstavkeDataGridViewTextBoxColumn
-            // 
-            this.iDstavkeDataGridViewTextBoxColumn.DataPropertyName = "ID_stavke";
-            this.iDstavkeDataGridViewTextBoxColumn.HeaderText = "ID_stavke";
-            this.iDstavkeDataGridViewTextBoxColumn.Name = "iDstavkeDataGridViewTextBoxColumn";
-            this.iDstavkeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDstavkeDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // iDcjenikaDataGridViewTextBoxColumn
-            // 
-            this.iDcjenikaDataGridViewTextBoxColumn.DataPropertyName = "ID_cjenika";
-            this.iDcjenikaDataGridViewTextBoxColumn.HeaderText = "ID_cjenika";
-            this.iDcjenikaDataGridViewTextBoxColumn.Name = "iDcjenikaDataGridViewTextBoxColumn";
-            this.iDcjenikaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDcjenikaDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // iDuslugeDataGridViewTextBoxColumn
-            // 
-            this.iDuslugeDataGridViewTextBoxColumn.DataPropertyName = "ID_usluge";
-            this.iDuslugeDataGridViewTextBoxColumn.HeaderText = "ID usluge";
-            this.iDuslugeDataGridViewTextBoxColumn.Name = "iDuslugeDataGridViewTextBoxColumn";
-            this.iDuslugeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Naziv
             // 
@@ -404,9 +373,6 @@
         private System.Windows.Forms.BindingSource mjerna_jedinicaBindingSource;
         private System.Windows.Forms.TextBox iD_mjerne_jediniceTextBox;
         private System.Windows.Forms.BindingSource uslugaBindingSource1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDstavkeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDcjenikaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDuslugeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Naziv;
         private System.Windows.Forms.DataGridViewComboBoxColumn Mjerna_jedinica;
         private System.Windows.Forms.DataGridViewTextBoxColumn cijena;

@@ -69,6 +69,12 @@ namespace Aplikacija.Administrator
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
+            dataGridView1.Rows.Add();
+            int rowIndex = dataGridView1.RowCount - 1;
+            DataGridViewRow R = dataGridView1.Rows[rowIndex];
+            R.Cells["Naziv"].Value = nazivTextBox.Text;
+            
+            
             try
             {
                 this.stavka_cjenikaBindingSource.AddNew();
