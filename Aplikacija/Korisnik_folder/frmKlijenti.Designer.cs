@@ -76,7 +76,7 @@
             this.dgvKlijenti.Name = "dgvKlijenti";
             this.dgvKlijenti.ReadOnly = true;
             this.dgvKlijenti.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKlijenti.Size = new System.Drawing.Size(759, 453);
+            this.dgvKlijenti.Size = new System.Drawing.Size(759, 450);
             this.dgvKlijenti.TabIndex = 0;
             this.dgvKlijenti.SelectionChanged += new System.EventHandler(this.dgvKlijenti_SelectionChanged);
             // 
@@ -159,7 +159,7 @@
             // btnDodaj
             // 
             this.btnDodaj.AutoSize = true;
-            this.btnDodaj.Location = new System.Drawing.Point(280, 500);
+            this.btnDodaj.Location = new System.Drawing.Point(277, 497);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(75, 23);
             this.btnDodaj.TabIndex = 4;
@@ -188,7 +188,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(697, 500);
+            this.btnUpdate.Location = new System.Drawing.Point(697, 497);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 14;
@@ -208,7 +208,7 @@
             // btnObriši
             // 
             this.btnObriši.AutoSize = true;
-            this.btnObriši.Location = new System.Drawing.Point(442, 500);
+            this.btnObriši.Location = new System.Drawing.Point(439, 497);
             this.btnObriši.Name = "btnObriši";
             this.btnObriši.Size = new System.Drawing.Size(75, 23);
             this.btnObriši.TabIndex = 16;
@@ -219,7 +219,7 @@
             // btnUredi
             // 
             this.btnUredi.AutoSize = true;
-            this.btnUredi.Location = new System.Drawing.Point(361, 500);
+            this.btnUredi.Location = new System.Drawing.Point(358, 497);
             this.btnUredi.Name = "btnUredi";
             this.btnUredi.Size = new System.Drawing.Size(75, 23);
             this.btnUredi.TabIndex = 17;
@@ -232,7 +232,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(784, 542);
             this.ControlBox = false;
             this.Controls.Add(this.btnUredi);
             this.Controls.Add(this.btnObriši);

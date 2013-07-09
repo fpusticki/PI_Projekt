@@ -39,13 +39,13 @@
             this.mjerna_jedinicaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.Mjerna_jedinicaTableAdapter();
             this.btnNatrag = new System.Windows.Forms.Button();
             this.dgvAktivanCjenik = new System.Windows.Forms.DataGridView();
-            this.mjernajedinicaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.iDstavkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDcjenikaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_usluge = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewComboBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.mjernajedinicaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewComboBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.uslugaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).BeginInit();
@@ -130,13 +130,8 @@
             this.dgvAktivanCjenik.Name = "dgvAktivanCjenik";
             this.dgvAktivanCjenik.ReadOnly = true;
             this.dgvAktivanCjenik.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAktivanCjenik.Size = new System.Drawing.Size(759, 508);
+            this.dgvAktivanCjenik.Size = new System.Drawing.Size(759, 488);
             this.dgvAktivanCjenik.TabIndex = 6;
-            // 
-            // mjernajedinicaBindingSource1
-            // 
-            this.mjernajedinicaBindingSource1.DataMember = "Mjerna_jedinica";
-            this.mjernajedinicaBindingSource1.DataSource = this.bazaDataSet;
             // 
             // iDstavkeDataGridViewTextBoxColumn
             // 
@@ -196,6 +191,11 @@
             this.dataGridViewComboBoxColumn1.ReadOnly = true;
             this.dataGridViewComboBoxColumn1.ValueMember = "ID_mjerne_jedinice";
             // 
+            // mjernajedinicaBindingSource1
+            // 
+            this.mjernajedinicaBindingSource1.DataMember = "Mjerna_jedinica";
+            this.mjernajedinicaBindingSource1.DataSource = this.bazaDataSet;
+            // 
             // dataGridViewComboBoxColumn2
             // 
             this.dataGridViewComboBoxColumn2.DataPropertyName = "ID_usluge";
@@ -211,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(784, 542);
             this.ControlBox = false;
             this.Controls.Add(this.dgvAktivanCjenik);
             this.Controls.Add(this.btnNatrag);

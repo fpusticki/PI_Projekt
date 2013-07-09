@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1ecc1a5b0a6b40a198432948c808d260" Name="Diagram1">
+        <EntityTypeShape EntityType="BazaModel.Admin" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaModel.Cjenik" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaModel.Crm" Width="1.5" PointX="7.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaModel.Klijent" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaModel.Mjerna_jedinica" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaModel.Racun" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaModel.Stavka_cjenika" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaModel.Stavka_racuna" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BazaModel.Usluga" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="BazaModel.FK_Stavka_cjenika_ID_cjenika" ManuallyRouted="false" />
+        <AssociationConnector Association="BazaModel.FK_Račun_ID_klijenta" ManuallyRouted="false" />
+        <AssociationConnector Association="BazaModel.FK_Usluga_Mjerna_jedinica" ManuallyRouted="false" />
+        <AssociationConnector Association="BazaModel.FK_Stavka_računa_ID_računa" ManuallyRouted="false" />
+        <AssociationConnector Association="BazaModel.FK_Stavka_cjenika_ID_usluge" ManuallyRouted="false" />
+        <AssociationConnector Association="BazaModel.FK_Stavka_računa_ID_usluge" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

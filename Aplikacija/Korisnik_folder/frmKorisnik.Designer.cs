@@ -36,6 +36,8 @@
             this.miCjenik = new System.Windows.Forms.ToolStripMenuItem();
             this.miKlijenti = new System.Windows.Forms.ToolStripMenuItem();
             this.miRacun = new System.Windows.Forms.ToolStripMenuItem();
+            this.pregledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kreiranjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,10 +93,26 @@
             // 
             // miRacun
             // 
+            this.miRacun.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pregledToolStripMenuItem,
+            this.kreiranjeToolStripMenuItem});
             this.miRacun.Name = "miRacun";
-            this.miRacun.Size = new System.Drawing.Size(52, 20);
-            this.miRacun.Text = "Račun";
-            this.miRacun.Click += new System.EventHandler(this.miRacun_Click);
+            this.miRacun.Size = new System.Drawing.Size(55, 20);
+            this.miRacun.Text = "Računi";
+            // 
+            // pregledToolStripMenuItem
+            // 
+            this.pregledToolStripMenuItem.Name = "pregledToolStripMenuItem";
+            this.pregledToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pregledToolStripMenuItem.Text = "Pregled";
+            this.pregledToolStripMenuItem.Click += new System.EventHandler(this.pregledToolStripMenuItem_Click);
+            // 
+            // kreiranjeToolStripMenuItem
+            // 
+            this.kreiranjeToolStripMenuItem.Name = "kreiranjeToolStripMenuItem";
+            this.kreiranjeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.kreiranjeToolStripMenuItem.Text = "Kreiranje";
+            this.kreiranjeToolStripMenuItem.Click += new System.EventHandler(this.kreiranjeToolStripMenuItem_Click);
             // 
             // frmKorisnik
             // 
@@ -124,5 +142,7 @@
         private System.Windows.Forms.ToolStripMenuItem miCjenik;
         private System.Windows.Forms.ToolStripMenuItem miKlijenti;
         private System.Windows.Forms.ToolStripMenuItem miRacun;
+        private System.Windows.Forms.ToolStripMenuItem pregledToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kreiranjeToolStripMenuItem;
     }
 }

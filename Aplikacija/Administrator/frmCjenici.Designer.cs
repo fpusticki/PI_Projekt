@@ -31,12 +31,21 @@
             this.components = new System.ComponentModel.Container();
             this.lblCjenici = new System.Windows.Forms.Label();
             this.dgvCjenik = new System.Windows.Forms.DataGridView();
+            this.ID_cjenika = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vazeciDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.cjenikBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bazaDataSet = new Aplikacija.BazaDataSet();
             this.lblStavkeCjenika = new System.Windows.Forms.Label();
             this.dgvStavkeCjenika = new System.Windows.Forms.DataGridView();
+            this.iDstavkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDcjenikaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.uslugaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ID_usluge = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.mjernajedinicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Column2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.stavka_cjenikaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cjenikTableAdapter = new Aplikacija.BazaDataSetTableAdapters.CjenikTableAdapter();
             this.tableAdapterManager = new Aplikacija.BazaDataSetTableAdapters.TableAdapterManager();
@@ -46,15 +55,6 @@
             this.uslugaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.UslugaTableAdapter();
             this.mjerna_jedinicaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.Mjerna_jedinicaTableAdapter();
             this.btnNatrag = new System.Windows.Forms.Button();
-            this.ID_cjenika = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vazeciDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.iDstavkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDcjenikaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ID_usluge = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCjenik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cjenikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).BeginInit();
@@ -90,127 +90,9 @@
             this.dgvCjenik.Name = "dgvCjenik";
             this.dgvCjenik.ReadOnly = true;
             this.dgvCjenik.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCjenik.Size = new System.Drawing.Size(759, 190);
+            this.dgvCjenik.Size = new System.Drawing.Size(760, 210);
             this.dgvCjenik.TabIndex = 1;
             this.dgvCjenik.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCjenik_SelectionChanged);
-            // 
-            // cjenikBindingSource
-            // 
-            this.cjenikBindingSource.DataMember = "Cjenik";
-            this.cjenikBindingSource.DataSource = this.bazaDataSet;
-            // 
-            // bazaDataSet
-            // 
-            this.bazaDataSet.DataSetName = "BazaDataSet";
-            this.bazaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // lblStavkeCjenika
-            // 
-            this.lblStavkeCjenika.AutoSize = true;
-            this.lblStavkeCjenika.Location = new System.Drawing.Point(12, 263);
-            this.lblStavkeCjenika.Name = "lblStavkeCjenika";
-            this.lblStavkeCjenika.Size = new System.Drawing.Size(78, 13);
-            this.lblStavkeCjenika.TabIndex = 2;
-            this.lblStavkeCjenika.Text = "Stavke cjenika";
-            // 
-            // dgvStavkeCjenika
-            // 
-            this.dgvStavkeCjenika.AllowUserToAddRows = false;
-            this.dgvStavkeCjenika.AllowUserToDeleteRows = false;
-            this.dgvStavkeCjenika.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvStavkeCjenika.AutoGenerateColumns = false;
-            this.dgvStavkeCjenika.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStavkeCjenika.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDstavkeDataGridViewTextBoxColumn,
-            this.iDcjenikaDataGridViewTextBoxColumn1,
-            this.iDuslugeDataGridViewTextBoxColumn,
-            this.ID_usluge,
-            this.Column1,
-            this.Column2});
-            this.dgvStavkeCjenika.DataSource = this.stavka_cjenikaBindingSource;
-            this.dgvStavkeCjenika.Location = new System.Drawing.Point(12, 279);
-            this.dgvStavkeCjenika.Name = "dgvStavkeCjenika";
-            this.dgvStavkeCjenika.ReadOnly = true;
-            this.dgvStavkeCjenika.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStavkeCjenika.Size = new System.Drawing.Size(759, 215);
-            this.dgvStavkeCjenika.TabIndex = 3;
-            // 
-            // uslugaBindingSource
-            // 
-            this.uslugaBindingSource.DataMember = "Usluga";
-            this.uslugaBindingSource.DataSource = this.bazaDataSet;
-            // 
-            // mjernajedinicaBindingSource
-            // 
-            this.mjernajedinicaBindingSource.DataMember = "Mjerna_jedinica";
-            this.mjernajedinicaBindingSource.DataSource = this.bazaDataSet;
-            // 
-            // stavka_cjenikaBindingSource
-            // 
-            this.stavka_cjenikaBindingSource.DataMember = "Stavka_cjenika";
-            this.stavka_cjenikaBindingSource.DataSource = this.bazaDataSet;
-            // 
-            // cjenikTableAdapter
-            // 
-            this.cjenikTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.AdminTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CjenikTableAdapter = this.cjenikTableAdapter;
-            this.tableAdapterManager.CrmTableAdapter = null;
-            this.tableAdapterManager.KlijentTableAdapter = null;
-            this.tableAdapterManager.KorisnikTableAdapter = null;
-            this.tableAdapterManager.Mjerna_jedinicaTableAdapter = null;
-            this.tableAdapterManager.RacunTableAdapter = null;
-            this.tableAdapterManager.Stavka_cjenikaTableAdapter = this.stavka_cjenikaTableAdapter;
-            this.tableAdapterManager.Stavka_racunaTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Aplikacija.BazaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UslugaTableAdapter = null;
-            // 
-            // stavka_cjenikaTableAdapter
-            // 
-            this.stavka_cjenikaTableAdapter.ClearBeforeFill = true;
-            // 
-            // btnUredi
-            // 
-            this.btnUredi.Location = new System.Drawing.Point(383, 500);
-            this.btnUredi.Name = "btnUredi";
-            this.btnUredi.Size = new System.Drawing.Size(75, 23);
-            this.btnUredi.TabIndex = 6;
-            this.btnUredi.Text = "Uredi";
-            this.btnUredi.UseVisualStyleBackColor = true;
-            this.btnUredi.Click += new System.EventHandler(this.btnUredi_Click);
-            // 
-            // btnDodaj
-            // 
-            this.btnDodaj.Location = new System.Drawing.Point(302, 500);
-            this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(75, 23);
-            this.btnDodaj.TabIndex = 5;
-            this.btnDodaj.Text = "Dodaj";
-            this.btnDodaj.UseVisualStyleBackColor = true;
-            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
-            // 
-            // uslugaTableAdapter
-            // 
-            this.uslugaTableAdapter.ClearBeforeFill = true;
-            // 
-            // mjerna_jedinicaTableAdapter
-            // 
-            this.mjerna_jedinicaTableAdapter.ClearBeforeFill = true;
-            // 
-            // btnNatrag
-            // 
-            this.btnNatrag.Location = new System.Drawing.Point(12, 12);
-            this.btnNatrag.Name = "btnNatrag";
-            this.btnNatrag.Size = new System.Drawing.Size(30, 23);
-            this.btnNatrag.TabIndex = 8;
-            this.btnNatrag.Text = "<-----";
-            this.btnNatrag.UseVisualStyleBackColor = true;
-            this.btnNatrag.Click += new System.EventHandler(this.btnNatrag_Click);
             // 
             // ID_cjenika
             // 
@@ -235,6 +117,48 @@
             this.vazeciDataGridViewCheckBoxColumn.HeaderText = "Važeći cjenik?";
             this.vazeciDataGridViewCheckBoxColumn.Name = "vazeciDataGridViewCheckBoxColumn";
             this.vazeciDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // cjenikBindingSource
+            // 
+            this.cjenikBindingSource.DataMember = "Cjenik";
+            this.cjenikBindingSource.DataSource = this.bazaDataSet;
+            // 
+            // bazaDataSet
+            // 
+            this.bazaDataSet.DataSetName = "BazaDataSet";
+            this.bazaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lblStavkeCjenika
+            // 
+            this.lblStavkeCjenika.AutoSize = true;
+            this.lblStavkeCjenika.Location = new System.Drawing.Point(12, 267);
+            this.lblStavkeCjenika.Name = "lblStavkeCjenika";
+            this.lblStavkeCjenika.Size = new System.Drawing.Size(78, 13);
+            this.lblStavkeCjenika.TabIndex = 2;
+            this.lblStavkeCjenika.Text = "Stavke cjenika";
+            // 
+            // dgvStavkeCjenika
+            // 
+            this.dgvStavkeCjenika.AllowUserToAddRows = false;
+            this.dgvStavkeCjenika.AllowUserToDeleteRows = false;
+            this.dgvStavkeCjenika.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvStavkeCjenika.AutoGenerateColumns = false;
+            this.dgvStavkeCjenika.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStavkeCjenika.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDstavkeDataGridViewTextBoxColumn,
+            this.iDcjenikaDataGridViewTextBoxColumn1,
+            this.iDuslugeDataGridViewTextBoxColumn,
+            this.ID_usluge,
+            this.Column1,
+            this.Column2});
+            this.dgvStavkeCjenika.DataSource = this.stavka_cjenikaBindingSource;
+            this.dgvStavkeCjenika.Location = new System.Drawing.Point(12, 283);
+            this.dgvStavkeCjenika.Name = "dgvStavkeCjenika";
+            this.dgvStavkeCjenika.ReadOnly = true;
+            this.dgvStavkeCjenika.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvStavkeCjenika.Size = new System.Drawing.Size(760, 210);
+            this.dgvStavkeCjenika.TabIndex = 3;
             // 
             // iDstavkeDataGridViewTextBoxColumn
             // 
@@ -268,6 +192,11 @@
             this.iDuslugeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.iDuslugeDataGridViewTextBoxColumn.ValueMember = "ID_usluge";
             // 
+            // uslugaBindingSource
+            // 
+            this.uslugaBindingSource.DataMember = "Usluga";
+            this.uslugaBindingSource.DataSource = this.bazaDataSet;
+            // 
             // ID_usluge
             // 
             this.ID_usluge.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -296,6 +225,11 @@
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column1.ValueMember = "ID_mjerne_jedinice";
             // 
+            // mjernajedinicaBindingSource
+            // 
+            this.mjernajedinicaBindingSource.DataMember = "Mjerna_jedinica";
+            this.mjernajedinicaBindingSource.DataSource = this.bazaDataSet;
+            // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -310,11 +244,77 @@
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column2.ValueMember = "ID_usluge";
             // 
+            // stavka_cjenikaBindingSource
+            // 
+            this.stavka_cjenikaBindingSource.DataMember = "Stavka_cjenika";
+            this.stavka_cjenikaBindingSource.DataSource = this.bazaDataSet;
+            // 
+            // cjenikTableAdapter
+            // 
+            this.cjenikTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.AdminTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CjenikTableAdapter = this.cjenikTableAdapter;
+            this.tableAdapterManager.CrmTableAdapter = null;
+            this.tableAdapterManager.KlijentTableAdapter = null;
+            this.tableAdapterManager.KorisnikTableAdapter = null;
+            this.tableAdapterManager.Mjerna_jedinicaTableAdapter = null;
+            this.tableAdapterManager.RacunTableAdapter = null;
+            this.tableAdapterManager.Stavka_cjenikaTableAdapter = this.stavka_cjenikaTableAdapter;
+            this.tableAdapterManager.Stavka_racunaTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Aplikacija.BazaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UslugaTableAdapter = null;
+            // 
+            // stavka_cjenikaTableAdapter
+            // 
+            this.stavka_cjenikaTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnUredi
+            // 
+            this.btnUredi.Location = new System.Drawing.Point(382, 499);
+            this.btnUredi.Name = "btnUredi";
+            this.btnUredi.Size = new System.Drawing.Size(75, 23);
+            this.btnUredi.TabIndex = 6;
+            this.btnUredi.Text = "Uredi";
+            this.btnUredi.UseVisualStyleBackColor = true;
+            this.btnUredi.Click += new System.EventHandler(this.btnUredi_Click);
+            // 
+            // btnDodaj
+            // 
+            this.btnDodaj.Location = new System.Drawing.Point(301, 499);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(75, 23);
+            this.btnDodaj.TabIndex = 5;
+            this.btnDodaj.Text = "Dodaj";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
+            // 
+            // uslugaTableAdapter
+            // 
+            this.uslugaTableAdapter.ClearBeforeFill = true;
+            // 
+            // mjerna_jedinicaTableAdapter
+            // 
+            this.mjerna_jedinicaTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnNatrag
+            // 
+            this.btnNatrag.Location = new System.Drawing.Point(12, 12);
+            this.btnNatrag.Name = "btnNatrag";
+            this.btnNatrag.Size = new System.Drawing.Size(30, 23);
+            this.btnNatrag.TabIndex = 8;
+            this.btnNatrag.Text = "<-----";
+            this.btnNatrag.UseVisualStyleBackColor = true;
+            this.btnNatrag.Click += new System.EventHandler(this.btnNatrag_Click);
+            // 
             // frmCjenici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(784, 542);
             this.ControlBox = false;
             this.Controls.Add(this.btnNatrag);
             this.Controls.Add(this.btnUredi);

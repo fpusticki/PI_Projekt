@@ -45,12 +45,22 @@ namespace Aplikacija.Administrator
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
-            frmDodajCjenik noviCjenik = new frmDodajCjenik();
-            noviCjenik.ShowDialog();
+            cjenikBindingSource.AddNew();
+            dgvCjenik.Rows[dgvCjenik.RowCount - 1].Cells[0].Value = Convert.ToInt32(dgvCjenik.Rows[dgvCjenik.RowCount - 2].Cells[0].Value) + 1;
+            dgvCjenik.Rows[dgvCjenik.RowCount - 1].Cells[1].Value = DateTime.Today;
+
+            this.Validate();
+            this.cjenikBindingSource.EndEdit();
+
+            int ID = Convert.ToInt32(dgvCjenik.Rows[dgvCjenik.RowCount - 1].Cells[0].Value);
+
+            frmNoviCjenik noviCjenik = new frmNoviCjenik(ID);
+            noviCjenik.ShowDialog();  
         }
 
         private void btnUredi_Click(object sender, EventArgs e)
         {
+
         }
     }
 }

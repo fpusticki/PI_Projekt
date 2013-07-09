@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BazaModelStoreContainer" CdmEntityContainer="BazaEntities">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="BazaModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="ID_admin" ColumnName="ID_admin" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="lozinka" ColumnName="lozinka" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cjenik">
+      <EntityTypeMapping TypeName="BazaModel.Cjenik">
+        <MappingFragment StoreEntitySet="Cjenik">
+          <ScalarProperty Name="ID_cjenika" ColumnName="ID_cjenika" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="vazeci" ColumnName="vazeci" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Crm">
+      <EntityTypeMapping TypeName="BazaModel.Crm">
+        <MappingFragment StoreEntitySet="Crm">
+          <ScalarProperty Name="ID_CRM" ColumnName="ID_CRM" />
+          <ScalarProperty Name="opis_popusta" ColumnName="opis_popusta" />
+          <ScalarProperty Name="broj_dolazaka" ColumnName="broj_dolazaka" />
+          <ScalarProperty Name="vrijeme_provjere" ColumnName="vrijeme_provjere" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Klijent">
+      <EntityTypeMapping TypeName="BazaModel.Klijent">
+        <MappingFragment StoreEntitySet="Klijent">
+          <ScalarProperty Name="ID_klijenta" ColumnName="ID_klijenta" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+          <ScalarProperty Name="spol" ColumnName="spol" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="newsletter" ColumnName="newsletter" />
+          <ScalarProperty Name="broj_dolazaka" ColumnName="broj_dolazaka" />
+          <ScalarProperty Name="zadnji_dolazak" ColumnName="zadnji_dolazak" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mjerna_jedinica">
+      <EntityTypeMapping TypeName="BazaModel.Mjerna_jedinica">
+        <MappingFragment StoreEntitySet="Mjerna_jedinica">
+          <ScalarProperty Name="ID_mjerne_jedinice" ColumnName="ID_mjerne_jedinice" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Racun">
+      <EntityTypeMapping TypeName="BazaModel.Racun">
+        <MappingFragment StoreEntitySet="Racun">
+          <ScalarProperty Name="ID_racuna" ColumnName="ID_racuna" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="ID_korisnika" ColumnName="ID_korisnika" />
+          <ScalarProperty Name="ID_klijenta" ColumnName="ID_klijenta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stavka_cjenika">
+      <EntityTypeMapping TypeName="BazaModel.Stavka_cjenika">
+        <MappingFragment StoreEntitySet="Stavka_cjenika">
+          <ScalarProperty Name="ID_stavke" ColumnName="ID_stavke" />
+          <ScalarProperty Name="ID_cjenika" ColumnName="ID_cjenika" />
+          <ScalarProperty Name="ID_usluge" ColumnName="ID_usluge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stavka_racuna">
+      <EntityTypeMapping TypeName="BazaModel.Stavka_racuna">
+        <MappingFragment StoreEntitySet="Stavka_racuna">
+          <ScalarProperty Name="ID_stavke" ColumnName="ID_stavke" />
+          <ScalarProperty Name="ID_racuna" ColumnName="ID_racuna" />
+          <ScalarProperty Name="ID_usluge" ColumnName="ID_usluge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BazaModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usluga">
+      <EntityTypeMapping TypeName="BazaModel.Usluga">
+        <MappingFragment StoreEntitySet="Usluga">
+          <ScalarProperty Name="ID_usluge" ColumnName="ID_usluge" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="opis" ColumnName="opis" />
+          <ScalarProperty Name="ID_mjerne_jedinice" ColumnName="ID_mjerne_jedinice" />
+          <ScalarProperty Name="cijena" ColumnName="cijena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -29,11 +29,12 @@ namespace Aplikacija.Korisnik
                 try
                 {
                     SqlConnection conn = new SqlConnection();
-                    conn.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\PI_BAZA.mdf;Integrated Security=True";
+                    conn.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Baza\Baza.mdf;Integrated Security=True";
 
                     string updateSql = "UPDATE CRM " + "SET opis_popusta = @opis_popusta, broj_dolazaka = @broj_dolazaka, vrijeme_provjere = @vrijeme_provjere " +
                 "WHERE id_CRM = @id_CRM";
                     SqlCommand update = new SqlCommand(updateSql, conn);
+                    conn.Open();
              
                     update.Parameters.Add("@opis_popusta", SqlDbType.Text, 3000, "opis_popusta");
                     update.Parameters.Add("@broj_dolazaka", SqlDbType.Int, 50, "broj_dolazaka");
@@ -56,6 +57,8 @@ namespace Aplikacija.Korisnik
 
 
                     update.ExecuteNonQuery();
+                    conn.Close();
+
                 }
                 catch (SqlException ex)
                 {

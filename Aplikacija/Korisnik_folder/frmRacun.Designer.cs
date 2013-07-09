@@ -29,85 +29,60 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label iD_klijentaLabel;
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvPregledStavki = new System.Windows.Forms.DataGridView();
-            this.btnSpremi = new System.Windows.Forms.Button();
-            this.btnNatrag = new System.Windows.Forms.Button();
-            this.btnPonisti = new System.Windows.Forms.Button();
-            this.stavka_racunaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bazaDataSet = new Aplikacija.BazaDataSet();
-            this.stavka_racunaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.Stavka_racunaTableAdapter();
+            this.btnNatrag = new System.Windows.Forms.Button();
             this.tableAdapterManager = new Aplikacija.BazaDataSetTableAdapters.TableAdapterManager();
-            this.uslugaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.uslugaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.UslugaTableAdapter();
-            this.mjernajedinicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mjerna_jedinicaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.Mjerna_jedinicaTableAdapter();
-            this.iDstavkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDracunaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_usluge = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.klijentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.klijentTableAdapter = new Aplikacija.BazaDataSetTableAdapters.KlijentTableAdapter();
             this.racunBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.racunTableAdapter = new Aplikacija.BazaDataSetTableAdapters.RacunTableAdapter();
-            this.iD_klijentaComboBox = new System.Windows.Forms.ComboBox();
-            this.btnDodajStavkuRacuna = new System.Windows.Forms.Button();
-            iD_klijentaLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPregledStavki)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stavka_racunaBindingSource)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dgvRacuni = new System.Windows.Forms.DataGridView();
+            this.iDracunaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDkorisnikaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.korisnikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDklijentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dgvStvkeRacuna = new System.Windows.Forms.DataGridView();
+            this.iDstavkeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Naziv = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.uslugaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Opis = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Mjerna_jedinica = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.mjernajedinicaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Cijena = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.iDracunaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDuslugeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stavkaracunaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.korisnikTableAdapter = new Aplikacija.BazaDataSetTableAdapters.KorisnikTableAdapter();
+            this.stavka_racunaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.Stavka_racunaTableAdapter();
+            this.uslugaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.UslugaTableAdapter();
+            this.mjerna_jedinicaTableAdapter = new Aplikacija.BazaDataSetTableAdapters.Mjerna_jedinicaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uslugaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mjernajedinicaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.klijentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.racunBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRacuni)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStvkeRacuna)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uslugaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mjernajedinicaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stavkaracunaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 38);
+            this.label1.Location = new System.Drawing.Point(12, 286);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Stavke računa";
             // 
-            // dgvPregledStavki
+            // bazaDataSet
             // 
-            this.dgvPregledStavki.AllowUserToAddRows = false;
-            this.dgvPregledStavki.AllowUserToDeleteRows = false;
-            this.dgvPregledStavki.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvPregledStavki.AutoGenerateColumns = false;
-            this.dgvPregledStavki.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPregledStavki.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDstavkeDataGridViewTextBoxColumn,
-            this.iDracunaDataGridViewTextBoxColumn,
-            this.iDuslugeDataGridViewTextBoxColumn,
-            this.ID_usluge,
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dgvPregledStavki.DataSource = this.stavka_racunaBindingSource;
-            this.dgvPregledStavki.Location = new System.Drawing.Point(12, 54);
-            this.dgvPregledStavki.Name = "dgvPregledStavki";
-            this.dgvPregledStavki.ReadOnly = true;
-            this.dgvPregledStavki.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPregledStavki.Size = new System.Drawing.Size(776, 317);
-            this.dgvPregledStavki.TabIndex = 2;
-            // 
-            // btnSpremi
-            // 
-            this.btnSpremi.Location = new System.Drawing.Point(280, 500);
-            this.btnSpremi.Name = "btnSpremi";
-            this.btnSpremi.Size = new System.Drawing.Size(75, 23);
-            this.btnSpremi.TabIndex = 4;
-            this.btnSpremi.Text = "Spremi";
-            this.btnSpremi.UseVisualStyleBackColor = true;
-            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
+            this.bazaDataSet.DataSetName = "BazaDataSet";
+            this.bazaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnNatrag
             // 
@@ -119,129 +94,21 @@
             this.btnNatrag.UseVisualStyleBackColor = true;
             this.btnNatrag.Click += new System.EventHandler(this.btnNatrag_Click);
             // 
-            // btnPonisti
-            // 
-            this.btnPonisti.Location = new System.Drawing.Point(361, 500);
-            this.btnPonisti.Name = "btnPonisti";
-            this.btnPonisti.Size = new System.Drawing.Size(75, 23);
-            this.btnPonisti.TabIndex = 17;
-            this.btnPonisti.Text = "Poništi";
-            this.btnPonisti.UseVisualStyleBackColor = true;
-            this.btnPonisti.Click += new System.EventHandler(this.btnPonisti_Click);
-            // 
-            // stavka_racunaBindingSource
-            // 
-            this.stavka_racunaBindingSource.DataMember = "Stavka_racuna";
-            this.stavka_racunaBindingSource.DataSource = this.bazaDataSet;
-            // 
-            // bazaDataSet
-            // 
-            this.bazaDataSet.DataSetName = "BazaDataSet";
-            this.bazaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // stavka_racunaTableAdapter
-            // 
-            this.stavka_racunaTableAdapter.ClearBeforeFill = true;
-            // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.AdminTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CjenikTableAdapter = null;
+            this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.CrmTableAdapter = null;
             this.tableAdapterManager.KlijentTableAdapter = null;
             this.tableAdapterManager.KorisnikTableAdapter = null;
             this.tableAdapterManager.Mjerna_jedinicaTableAdapter = null;
             this.tableAdapterManager.RacunTableAdapter = null;
             this.tableAdapterManager.Stavka_cjenikaTableAdapter = null;
-            this.tableAdapterManager.Stavka_racunaTableAdapter = this.stavka_racunaTableAdapter;
+            this.tableAdapterManager.Stavka_racunaTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Aplikacija.BazaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UslugaTableAdapter = null;
-            // 
-            // uslugaBindingSource
-            // 
-            this.uslugaBindingSource.DataMember = "Usluga";
-            this.uslugaBindingSource.DataSource = this.bazaDataSet;
-            // 
-            // uslugaTableAdapter
-            // 
-            this.uslugaTableAdapter.ClearBeforeFill = true;
-            // 
-            // mjernajedinicaBindingSource
-            // 
-            this.mjernajedinicaBindingSource.DataMember = "Mjerna_jedinica";
-            this.mjernajedinicaBindingSource.DataSource = this.bazaDataSet;
-            // 
-            // mjerna_jedinicaTableAdapter
-            // 
-            this.mjerna_jedinicaTableAdapter.ClearBeforeFill = true;
-            // 
-            // iDstavkeDataGridViewTextBoxColumn
-            // 
-            this.iDstavkeDataGridViewTextBoxColumn.DataPropertyName = "ID_stavke";
-            this.iDstavkeDataGridViewTextBoxColumn.HeaderText = "ID_stavke";
-            this.iDstavkeDataGridViewTextBoxColumn.Name = "iDstavkeDataGridViewTextBoxColumn";
-            this.iDstavkeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDstavkeDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // iDracunaDataGridViewTextBoxColumn
-            // 
-            this.iDracunaDataGridViewTextBoxColumn.DataPropertyName = "ID_racuna";
-            this.iDracunaDataGridViewTextBoxColumn.HeaderText = "ID_racuna";
-            this.iDracunaDataGridViewTextBoxColumn.Name = "iDracunaDataGridViewTextBoxColumn";
-            this.iDracunaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDracunaDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // iDuslugeDataGridViewTextBoxColumn
-            // 
-            this.iDuslugeDataGridViewTextBoxColumn.DataPropertyName = "ID_usluge";
-            this.iDuslugeDataGridViewTextBoxColumn.HeaderText = "ID usluge";
-            this.iDuslugeDataGridViewTextBoxColumn.Name = "iDuslugeDataGridViewTextBoxColumn";
-            this.iDuslugeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ID_usluge
-            // 
-            this.ID_usluge.DataPropertyName = "ID_usluge";
-            this.ID_usluge.DataSource = this.uslugaBindingSource;
-            this.ID_usluge.DisplayMember = "naziv";
-            this.ID_usluge.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.ID_usluge.HeaderText = "Naziv";
-            this.ID_usluge.Name = "ID_usluge";
-            this.ID_usluge.ReadOnly = true;
-            this.ID_usluge.ValueMember = "ID_usluge";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "ID_usluge";
-            this.Column1.DataSource = this.uslugaBindingSource;
-            this.Column1.DisplayMember = "opis";
-            this.Column1.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.Column1.HeaderText = "Opis";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.ValueMember = "ID_usluge";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "ID_usluge";
-            this.Column2.DataSource = this.mjernajedinicaBindingSource;
-            this.Column2.DisplayMember = "Naziv";
-            this.Column2.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.Column2.HeaderText = "Mjerna jedinica";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.ValueMember = "ID_mjerne_jedinice";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "ID_usluge";
-            this.Column3.DataSource = this.uslugaBindingSource;
-            this.Column3.DisplayMember = "cijena";
-            this.Column3.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.Column3.HeaderText = "Cijena";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.ValueMember = "ID_usluge";
             // 
             // klijentBindingSource
             // 
@@ -261,62 +128,232 @@
             // 
             this.racunTableAdapter.ClearBeforeFill = true;
             // 
-            // iD_klijentaLabel
+            // label2
             // 
-            iD_klijentaLabel.AutoSize = true;
-            iD_klijentaLabel.Location = new System.Drawing.Point(29, 463);
-            iD_klijentaLabel.Name = "iD_klijentaLabel";
-            iD_klijentaLabel.Size = new System.Drawing.Size(57, 13);
-            iD_klijentaLabel.TabIndex = 17;
-            iD_klijentaLabel.Text = "ID klijenta:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Popis računa";
             // 
-            // iD_klijentaComboBox
+            // dgvRacuni
             // 
-            this.iD_klijentaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.racunBindingSource, "ID_klijenta", true));
-            this.iD_klijentaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.racunBindingSource, "ID_klijenta", true));
-            this.iD_klijentaComboBox.DataSource = this.klijentBindingSource;
-            this.iD_klijentaComboBox.DisplayMember = "prezime";
-            this.iD_klijentaComboBox.FormattingEnabled = true;
-            this.iD_klijentaComboBox.Location = new System.Drawing.Point(92, 460);
-            this.iD_klijentaComboBox.Name = "iD_klijentaComboBox";
-            this.iD_klijentaComboBox.Size = new System.Drawing.Size(121, 21);
-            this.iD_klijentaComboBox.TabIndex = 18;
-            this.iD_klijentaComboBox.ValueMember = "ID_klijenta";
+            this.dgvRacuni.AllowUserToAddRows = false;
+            this.dgvRacuni.AllowUserToDeleteRows = false;
+            this.dgvRacuni.AutoGenerateColumns = false;
+            this.dgvRacuni.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRacuni.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDracunaDataGridViewTextBoxColumn,
+            this.datumDataGridViewTextBoxColumn,
+            this.iDkorisnikaDataGridViewTextBoxColumn,
+            this.iDklijentaDataGridViewTextBoxColumn});
+            this.dgvRacuni.DataSource = this.racunBindingSource;
+            this.dgvRacuni.Location = new System.Drawing.Point(12, 54);
+            this.dgvRacuni.Name = "dgvRacuni";
+            this.dgvRacuni.ReadOnly = true;
+            this.dgvRacuni.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvRacuni.Size = new System.Drawing.Size(760, 220);
+            this.dgvRacuni.TabIndex = 18;
+            this.dgvRacuni.SelectionChanged += new System.EventHandler(this.dgvRacuni_SelectionChanged);
             // 
-            // btnDodajStavkuRacuna
+            // iDracunaDataGridViewTextBoxColumn
             // 
-            this.btnDodajStavkuRacuna.Location = new System.Drawing.Point(32, 418);
-            this.btnDodajStavkuRacuna.Name = "btnDodajStavkuRacuna";
-            this.btnDodajStavkuRacuna.Size = new System.Drawing.Size(181, 23);
-            this.btnDodajStavkuRacuna.TabIndex = 19;
-            this.btnDodajStavkuRacuna.Text = "Dodaj stavku";
-            this.btnDodajStavkuRacuna.UseVisualStyleBackColor = true;
+            this.iDracunaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDracunaDataGridViewTextBoxColumn.DataPropertyName = "ID_racuna";
+            this.iDracunaDataGridViewTextBoxColumn.HeaderText = "ID računa";
+            this.iDracunaDataGridViewTextBoxColumn.Name = "iDracunaDataGridViewTextBoxColumn";
+            this.iDracunaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // datumDataGridViewTextBoxColumn
+            // 
+            this.datumDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.datumDataGridViewTextBoxColumn.DataPropertyName = "datum";
+            this.datumDataGridViewTextBoxColumn.HeaderText = "Datum";
+            this.datumDataGridViewTextBoxColumn.Name = "datumDataGridViewTextBoxColumn";
+            this.datumDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iDkorisnikaDataGridViewTextBoxColumn
+            // 
+            this.iDkorisnikaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDkorisnikaDataGridViewTextBoxColumn.DataPropertyName = "ID_korisnika";
+            this.iDkorisnikaDataGridViewTextBoxColumn.DataSource = this.korisnikBindingSource;
+            this.iDkorisnikaDataGridViewTextBoxColumn.DisplayMember = "prezime";
+            this.iDkorisnikaDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.iDkorisnikaDataGridViewTextBoxColumn.HeaderText = "Račun izdao";
+            this.iDkorisnikaDataGridViewTextBoxColumn.Name = "iDkorisnikaDataGridViewTextBoxColumn";
+            this.iDkorisnikaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDkorisnikaDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.iDkorisnikaDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.iDkorisnikaDataGridViewTextBoxColumn.ValueMember = "ID_korisnika";
+            // 
+            // korisnikBindingSource
+            // 
+            this.korisnikBindingSource.DataMember = "Korisnik";
+            this.korisnikBindingSource.DataSource = this.bazaDataSet;
+            // 
+            // iDklijentaDataGridViewTextBoxColumn
+            // 
+            this.iDklijentaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDklijentaDataGridViewTextBoxColumn.DataPropertyName = "ID_klijenta";
+            this.iDklijentaDataGridViewTextBoxColumn.DataSource = this.klijentBindingSource;
+            this.iDklijentaDataGridViewTextBoxColumn.DisplayMember = "prezime";
+            this.iDklijentaDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.iDklijentaDataGridViewTextBoxColumn.HeaderText = "Klijent";
+            this.iDklijentaDataGridViewTextBoxColumn.Name = "iDklijentaDataGridViewTextBoxColumn";
+            this.iDklijentaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDklijentaDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.iDklijentaDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.iDklijentaDataGridViewTextBoxColumn.ValueMember = "ID_klijenta";
+            // 
+            // dgvStvkeRacuna
+            // 
+            this.dgvStvkeRacuna.AllowUserToAddRows = false;
+            this.dgvStvkeRacuna.AllowUserToDeleteRows = false;
+            this.dgvStvkeRacuna.AutoGenerateColumns = false;
+            this.dgvStvkeRacuna.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStvkeRacuna.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDstavkeDataGridViewTextBoxColumn,
+            this.Naziv,
+            this.Opis,
+            this.Mjerna_jedinica,
+            this.Cijena,
+            this.iDracunaDataGridViewTextBoxColumn1,
+            this.iDuslugeDataGridViewTextBoxColumn});
+            this.dgvStvkeRacuna.DataSource = this.stavkaracunaBindingSource;
+            this.dgvStvkeRacuna.Location = new System.Drawing.Point(12, 302);
+            this.dgvStvkeRacuna.Name = "dgvStvkeRacuna";
+            this.dgvStvkeRacuna.ReadOnly = true;
+            this.dgvStvkeRacuna.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvStvkeRacuna.Size = new System.Drawing.Size(760, 228);
+            this.dgvStvkeRacuna.TabIndex = 19;
+            // 
+            // iDstavkeDataGridViewTextBoxColumn
+            // 
+            this.iDstavkeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDstavkeDataGridViewTextBoxColumn.DataPropertyName = "ID_stavke";
+            this.iDstavkeDataGridViewTextBoxColumn.HeaderText = "ID_stavke";
+            this.iDstavkeDataGridViewTextBoxColumn.Name = "iDstavkeDataGridViewTextBoxColumn";
+            this.iDstavkeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDstavkeDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // Naziv
+            // 
+            this.Naziv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Naziv.DataSource = this.uslugaBindingSource;
+            this.Naziv.DisplayMember = "naziv";
+            this.Naziv.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.Naziv.HeaderText = "Naziv";
+            this.Naziv.Name = "Naziv";
+            this.Naziv.ReadOnly = true;
+            this.Naziv.ValueMember = "ID_usluge";
+            // 
+            // uslugaBindingSource
+            // 
+            this.uslugaBindingSource.DataMember = "Usluga";
+            this.uslugaBindingSource.DataSource = this.bazaDataSet;
+            // 
+            // Opis
+            // 
+            this.Opis.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Opis.DataSource = this.uslugaBindingSource;
+            this.Opis.DisplayMember = "opis";
+            this.Opis.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.Opis.HeaderText = "Opis";
+            this.Opis.Name = "Opis";
+            this.Opis.ReadOnly = true;
+            this.Opis.ValueMember = "ID_usluge";
+            // 
+            // Mjerna_jedinica
+            // 
+            this.Mjerna_jedinica.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Mjerna_jedinica.DataSource = this.mjernajedinicaBindingSource;
+            this.Mjerna_jedinica.DisplayMember = "Naziv";
+            this.Mjerna_jedinica.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.Mjerna_jedinica.HeaderText = "Mjerna jedinica";
+            this.Mjerna_jedinica.Name = "Mjerna_jedinica";
+            this.Mjerna_jedinica.ReadOnly = true;
+            this.Mjerna_jedinica.ValueMember = "ID_mjerne_jedinice";
+            // 
+            // mjernajedinicaBindingSource
+            // 
+            this.mjernajedinicaBindingSource.DataMember = "Mjerna_jedinica";
+            this.mjernajedinicaBindingSource.DataSource = this.bazaDataSet;
+            // 
+            // Cijena
+            // 
+            this.Cijena.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Cijena.DataSource = this.uslugaBindingSource;
+            this.Cijena.DisplayMember = "cijena";
+            this.Cijena.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.Cijena.HeaderText = "Cijena";
+            this.Cijena.Name = "Cijena";
+            this.Cijena.ReadOnly = true;
+            this.Cijena.ValueMember = "ID_usluge";
+            // 
+            // iDracunaDataGridViewTextBoxColumn1
+            // 
+            this.iDracunaDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDracunaDataGridViewTextBoxColumn1.DataPropertyName = "ID_racuna";
+            this.iDracunaDataGridViewTextBoxColumn1.HeaderText = "ID_racuna";
+            this.iDracunaDataGridViewTextBoxColumn1.Name = "iDracunaDataGridViewTextBoxColumn1";
+            this.iDracunaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.iDracunaDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // iDuslugeDataGridViewTextBoxColumn
+            // 
+            this.iDuslugeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDuslugeDataGridViewTextBoxColumn.DataPropertyName = "ID_usluge";
+            this.iDuslugeDataGridViewTextBoxColumn.HeaderText = "ID_usluge";
+            this.iDuslugeDataGridViewTextBoxColumn.Name = "iDuslugeDataGridViewTextBoxColumn";
+            this.iDuslugeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDuslugeDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // stavkaracunaBindingSource
+            // 
+            this.stavkaracunaBindingSource.DataMember = "Stavka_racuna";
+            this.stavkaracunaBindingSource.DataSource = this.bazaDataSet;
+            // 
+            // korisnikTableAdapter
+            // 
+            this.korisnikTableAdapter.ClearBeforeFill = true;
+            // 
+            // stavka_racunaTableAdapter
+            // 
+            this.stavka_racunaTableAdapter.ClearBeforeFill = true;
+            // 
+            // uslugaTableAdapter
+            // 
+            this.uslugaTableAdapter.ClearBeforeFill = true;
+            // 
+            // mjerna_jedinicaTableAdapter
+            // 
+            this.mjerna_jedinicaTableAdapter.ClearBeforeFill = true;
             // 
             // frmRacun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 562);
+            this.ClientSize = new System.Drawing.Size(784, 542);
             this.ControlBox = false;
-            this.Controls.Add(this.btnDodajStavkuRacuna);
-            this.Controls.Add(iD_klijentaLabel);
-            this.Controls.Add(this.iD_klijentaComboBox);
-            this.Controls.Add(this.btnPonisti);
+            this.Controls.Add(this.dgvStvkeRacuna);
+            this.Controls.Add(this.dgvRacuni);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnNatrag);
-            this.Controls.Add(this.btnSpremi);
-            this.Controls.Add(this.dgvPregledStavki);
             this.Controls.Add(this.label1);
             this.Name = "frmRacun";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Račun";
             this.Load += new System.EventHandler(this.frmRacun_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPregledStavki)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stavka_racunaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uslugaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mjernajedinicaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.klijentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.racunBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRacuni)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.korisnikBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStvkeRacuna)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uslugaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mjernajedinicaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stavkaracunaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,30 +362,34 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvPregledStavki;
-        private System.Windows.Forms.Button btnSpremi;
         private BazaDataSet bazaDataSet;
-        private System.Windows.Forms.BindingSource stavka_racunaBindingSource;
-        private BazaDataSetTableAdapters.Stavka_racunaTableAdapter stavka_racunaTableAdapter;
         private BazaDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Button btnNatrag;
-        private System.Windows.Forms.Button btnPonisti;
+        private System.Windows.Forms.BindingSource klijentBindingSource;
+        private BazaDataSetTableAdapters.KlijentTableAdapter klijentTableAdapter;
+        private System.Windows.Forms.BindingSource racunBindingSource;
+        private BazaDataSetTableAdapters.RacunTableAdapter racunTableAdapter;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dgvRacuni;
+        private System.Windows.Forms.DataGridView dgvStvkeRacuna;
+        private System.Windows.Forms.BindingSource korisnikBindingSource;
+        private BazaDataSetTableAdapters.KorisnikTableAdapter korisnikTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDracunaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datumDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn iDkorisnikaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn iDklijentaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource stavkaracunaBindingSource;
+        private BazaDataSetTableAdapters.Stavka_racunaTableAdapter stavka_racunaTableAdapter;
         private System.Windows.Forms.BindingSource uslugaBindingSource;
         private BazaDataSetTableAdapters.UslugaTableAdapter uslugaTableAdapter;
         private System.Windows.Forms.BindingSource mjernajedinicaBindingSource;
         private BazaDataSetTableAdapters.Mjerna_jedinicaTableAdapter mjerna_jedinicaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDstavkeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDracunaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Naziv;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Opis;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Mjerna_jedinica;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Cijena;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDracunaDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDuslugeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ID_usluge;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Column3;
-        private System.Windows.Forms.BindingSource klijentBindingSource;
-        private BazaDataSetTableAdapters.KlijentTableAdapter klijentTableAdapter;
-        private System.Windows.Forms.BindingSource racunBindingSource;
-        private BazaDataSetTableAdapters.RacunTableAdapter racunTableAdapter;
-        private System.Windows.Forms.ComboBox iD_klijentaComboBox;
-        private System.Windows.Forms.Button btnDodajStavkuRacuna;
     }
 }

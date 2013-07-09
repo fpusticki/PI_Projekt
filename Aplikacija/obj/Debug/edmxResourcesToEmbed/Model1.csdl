@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BazaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BazaEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Admin" EntityType="BazaModel.Admin" />
+    <EntitySet Name="Cjenik" EntityType="BazaModel.Cjenik" />
+    <EntitySet Name="Crm" EntityType="BazaModel.Crm" />
+    <EntitySet Name="Klijent" EntityType="BazaModel.Klijent" />
+    <EntitySet Name="Mjerna_jedinica" EntityType="BazaModel.Mjerna_jedinica" />
+    <EntitySet Name="Racun" EntityType="BazaModel.Racun" />
+    <EntitySet Name="Stavka_cjenika" EntityType="BazaModel.Stavka_cjenika" />
+    <EntitySet Name="Stavka_racuna" EntityType="BazaModel.Stavka_racuna" />
+    <EntitySet Name="sysdiagrams" EntityType="BazaModel.sysdiagrams" />
+    <EntitySet Name="Usluga" EntityType="BazaModel.Usluga" />
+    <AssociationSet Name="FK_Stavka_cjenika_ID_cjenika" Association="BazaModel.FK_Stavka_cjenika_ID_cjenika">
+      <End Role="Cjenik" EntitySet="Cjenik" />
+      <End Role="Stavka_cjenika" EntitySet="Stavka_cjenika" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Račun_ID_klijenta" Association="BazaModel.FK_Račun_ID_klijenta">
+      <End Role="Klijent" EntitySet="Klijent" />
+      <End Role="Racun" EntitySet="Racun" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usluga_Mjerna_jedinica" Association="BazaModel.FK_Usluga_Mjerna_jedinica">
+      <End Role="Mjerna_jedinica" EntitySet="Mjerna_jedinica" />
+      <End Role="Usluga" EntitySet="Usluga" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stavka_računa_ID_računa" Association="BazaModel.FK_Stavka_računa_ID_računa">
+      <End Role="Racun" EntitySet="Racun" />
+      <End Role="Stavka_racuna" EntitySet="Stavka_racuna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stavka_cjenika_ID_usluge" Association="BazaModel.FK_Stavka_cjenika_ID_usluge">
+      <End Role="Usluga" EntitySet="Usluga" />
+      <End Role="Stavka_cjenika" EntitySet="Stavka_cjenika" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stavka_računa_ID_usluge" Association="BazaModel.FK_Stavka_računa_ID_usluge">
+      <End Role="Usluga" EntitySet="Usluga" />
+      <End Role="Stavka_racuna" EntitySet="Stavka_racuna" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="ID_admin" />
+    </Key>
+    <Property Name="ID_admin" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ime" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="prezime" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="lozinka" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Cjenik">
+    <Key>
+      <PropertyRef Name="ID_cjenika" />
+    </Key>
+    <Property Name="ID_cjenika" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="datum" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="vazeci" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Stavka_cjenika" Relationship="BazaModel.FK_Stavka_cjenika_ID_cjenika" FromRole="Cjenik" ToRole="Stavka_cjenika" />
+  </EntityType>
+  <EntityType Name="Crm">
+    <Key>
+      <PropertyRef Name="ID_CRM" />
+    </Key>
+    <Property Name="ID_CRM" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="opis_popusta" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="broj_dolazaka" Type="Int32" Nullable="false" />
+    <Property Name="vrijeme_provjere" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Klijent">
+    <Key>
+      <PropertyRef Name="ID_klijenta" />
+    </Key>
+    <Property Name="ID_klijenta" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ime" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="prezime" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="spol" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="telefon" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="newsletter" Type="Boolean" Nullable="false" />
+    <Property Name="broj_dolazaka" Type="Int32" />
+    <Property Name="zadnji_dolazak" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Racun" Relationship="BazaModel.FK_Račun_ID_klijenta" FromRole="Klijent" ToRole="Racun" />
+  </EntityType>
+  <EntityType Name="Mjerna_jedinica">
+    <Key>
+      <PropertyRef Name="ID_mjerne_jedinice" />
+    </Key>
+    <Property Name="ID_mjerne_jedinice" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Naziv" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Usluga" Relationship="BazaModel.FK_Usluga_Mjerna_jedinica" FromRole="Mjerna_jedinica" ToRole="Usluga" />
+  </EntityType>
+  <EntityType Name="Racun">
+    <Key>
+      <PropertyRef Name="ID_racuna" />
+    </Key>
+    <Property Name="ID_racuna" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="datum" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ID_korisnika" Type="Int32" Nullable="false" />
+    <Property Name="ID_klijenta" Type="Int32" />
+    <NavigationProperty Name="Klijent" Relationship="BazaModel.FK_Račun_ID_klijenta" FromRole="Racun" ToRole="Klijent" />
+    <NavigationProperty Name="Stavka_racuna" Relationship="BazaModel.FK_Stavka_računa_ID_računa" FromRole="Racun" ToRole="Stavka_racuna" />
+  </EntityType>
+  <EntityType Name="Stavka_cjenika">
+    <Key>
+      <PropertyRef Name="ID_stavke" />
+    </Key>
+    <Property Name="ID_stavke" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_cjenika" Type="Int32" Nullable="false" />
+    <Property Name="ID_usluge" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cjenik" Relationship="BazaModel.FK_Stavka_cjenika_ID_cjenika" FromRole="Stavka_cjenika" ToRole="Cjenik" />
+    <NavigationProperty Name="Usluga" Relationship="BazaModel.FK_Stavka_cjenika_ID_usluge" FromRole="Stavka_cjenika" ToRole="Usluga" />
+  </EntityType>
+  <EntityType Name="Stavka_racuna">
+    <Key>
+      <PropertyRef Name="ID_stavke" />
+    </Key>
+    <Property Name="ID_stavke" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_racuna" Type="Int32" Nullable="false" />
+    <Property Name="ID_usluge" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Racun" Relationship="BazaModel.FK_Stavka_računa_ID_računa" FromRole="Stavka_racuna" ToRole="Racun" />
+    <NavigationProperty Name="Usluga" Relationship="BazaModel.FK_Stavka_računa_ID_usluge" FromRole="Stavka_racuna" ToRole="Usluga" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Usluga">
+    <Key>
+      <PropertyRef Name="ID_usluge" />
+    </Key>
+    <Property Name="ID_usluge" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="opis" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ID_mjerne_jedinice" Type="Int32" Nullable="false" />
+    <Property Name="cijena" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="Mjerna_jedinica" Relationship="BazaModel.FK_Usluga_Mjerna_jedinica" FromRole="Usluga" ToRole="Mjerna_jedinica" />
+    <NavigationProperty Name="Stavka_cjenika" Relationship="BazaModel.FK_Stavka_cjenika_ID_usluge" FromRole="Usluga" ToRole="Stavka_cjenika" />
+    <NavigationProperty Name="Stavka_racuna" Relationship="BazaModel.FK_Stavka_računa_ID_usluge" FromRole="Usluga" ToRole="Stavka_racuna" />
+  </EntityType>
+  <Association Name="FK_Stavka_cjenika_ID_cjenika">
+    <End Role="Cjenik" Type="BazaModel.Cjenik" Multiplicity="1" />
+    <End Role="Stavka_cjenika" Type="BazaModel.Stavka_cjenika" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cjenik">
+        <PropertyRef Name="ID_cjenika" />
+      </Principal>
+      <Dependent Role="Stavka_cjenika">
+        <PropertyRef Name="ID_cjenika" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Račun_ID_klijenta">
+    <End Role="Klijent" Type="BazaModel.Klijent" Multiplicity="0..1" />
+    <End Role="Racun" Type="BazaModel.Racun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klijent">
+        <PropertyRef Name="ID_klijenta" />
+      </Principal>
+      <Dependent Role="Racun">
+        <PropertyRef Name="ID_klijenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usluga_Mjerna_jedinica">
+    <End Role="Mjerna_jedinica" Type="BazaModel.Mjerna_jedinica" Multiplicity="1" />
+    <End Role="Usluga" Type="BazaModel.Usluga" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mjerna_jedinica">
+        <PropertyRef Name="ID_mjerne_jedinice" />
+      </Principal>
+      <Dependent Role="Usluga">
+        <PropertyRef Name="ID_mjerne_jedinice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stavka_računa_ID_računa">
+    <End Role="Racun" Type="BazaModel.Racun" Multiplicity="1" />
+    <End Role="Stavka_racuna" Type="BazaModel.Stavka_racuna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Racun">
+        <PropertyRef Name="ID_racuna" />
+      </Principal>
+      <Dependent Role="Stavka_racuna">
+        <PropertyRef Name="ID_racuna" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stavka_cjenika_ID_usluge">
+    <End Role="Usluga" Type="BazaModel.Usluga" Multiplicity="1" />
+    <End Role="Stavka_cjenika" Type="BazaModel.Stavka_cjenika" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usluga">
+        <PropertyRef Name="ID_usluge" />
+      </Principal>
+      <Dependent Role="Stavka_cjenika">
+        <PropertyRef Name="ID_usluge" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stavka_računa_ID_usluge">
+    <End Role="Usluga" Type="BazaModel.Usluga" Multiplicity="1" />
+    <End Role="Stavka_racuna" Type="BazaModel.Stavka_racuna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usluga">
+        <PropertyRef Name="ID_usluge" />
+      </Principal>
+      <Dependent Role="Stavka_racuna">
+        <PropertyRef Name="ID_usluge" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

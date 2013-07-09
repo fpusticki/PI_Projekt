@@ -168,9 +168,7 @@ D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frm
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.frmAdministrator.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmCjenici.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajAdmina.resources
-D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajCjenik.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajKorisnika.resources
-D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajStavkuCjenika.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmDodajUslugu.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmKorisnici.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmPostavke.resources
@@ -187,4 +185,6 @@ D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmRacun
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Korisnik.frmUrediKlijenta.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Properties.Resources.resources
 D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.csproj.GenerateResource.Cache
-D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmOdabirUsluga.resources
+D:\Documents\GitHub\PI_Projekt\Aplikacija\bin\Debug\Baza_PI.sdf
+D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Administrator.frmNoviCjenik.resources
+D:\Documents\GitHub\PI_Projekt\Aplikacija\obj\Debug\Aplikacija.Korisnik_folder.frmNoviRacun.resources

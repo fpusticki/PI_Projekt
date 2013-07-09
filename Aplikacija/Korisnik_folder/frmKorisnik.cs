@@ -17,6 +17,7 @@ namespace Aplikacija
         public frmKorisnik()
         {
             InitializeComponent();
+            //AsyncObavijest();
         }
 
         private void miObavijesti_Click(object sender, EventArgs e)
@@ -43,12 +44,20 @@ namespace Aplikacija
             klijenti.Show();
         }
 
-        private void miRacun_Click(object sender, EventArgs e)
+        private void pregledToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Korisnik.frmRacun racun = new Korisnik.frmRacun();
             racun.MdiParent = this;
             racun.WindowState = FormWindowState.Maximized;
             racun.Show();
+        }
+
+        private void kreiranjeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Korisnik_folder.frmNoviRacun noviRacun = new Korisnik_folder.frmNoviRacun();
+            noviRacun.MdiParent = this;
+            noviRacun.WindowState = FormWindowState.Maximized;
+            noviRacun.Show();
         }
 
         private void miFileOdjava_Click(object sender, EventArgs e)
@@ -58,6 +67,11 @@ namespace Aplikacija
             Login.LoginForma.txtPassword = null;
             Login.LoginForma.Show();
         }
+
+
+
+
+
 
         public async void AsyncObavijest()
         {
@@ -73,9 +87,9 @@ namespace Aplikacija
             //ConnectionString ti je obavezan za spajanje na bilo kakvu bazu jer moraš odrediti kakva je baza (lokalna, na udaljenom serveru,...),
             //gdje se ta baza nalazi(na kojoj lokaciji; na kojem path-u), moraš dati ime baze koju hoćeš koristiti (kako bi inače odredio s kojom bazom radiš),
             //i na kraju moraš odrediti da li je veza sigurna i da li postoji kakav account vezan za bazu
-            sc.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Baza.mdf;Integrated Security=True";
+            sc.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Baza\Baza.mdf;Integrated Security=True";
             SqlConnection sc2 = new SqlConnection();
-            sc2.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Baza.mdf;Integrated Security=True";
+            sc2.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Baza\Baza.mdf;Integrated Security=True";
             //sve vrste sql upita moraš stavljati u string 
             string selectUpit = "SELECT * FROM Klijent";
             //SQL upit koji vraća samo zadnji redak u tablici
@@ -135,7 +149,7 @@ namespace Aplikacija
                             string[] razdjeljeniDatum = datum.Split(' ');
 
                             string[] razdjeljeniDatum2 = razdjeljeniDatum[0].Split('/');
-
+                            
                             klijenti2.Dan = Convert.ToInt32(razdjeljeniDatum2[1]);
                             klijenti2.Mjesec = Convert.ToInt32(razdjeljeniDatum2[0]);
                             klijenti2.Godina = Convert.ToInt32(razdjeljeniDatum2[2]);
